@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>MK Web Notifications</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel="stylesheet" href="src/css/mk-notifications.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+	  <a class="navbar-brand" href="#">
+	    <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+	    MK Web Notifications
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav" role="tablist">
+	      <li class="nav-item">
+	        <a class="nav-link" href="#home">Home</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#usage">Usage</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#examples">Examples</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#documentation">Documentation</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#about">About</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+	<main role="main" class="container-fluid" data-spy="scroll" data-target="#navbarNav" data-offset="0">
+		<div class="row section home" id="home">
+			<div class="col-md-8 offset-md-2">
+				<div class="row">
+					<div class="col-md-8">
+						<br><br>
+						<img src="logo.png">
+						<br>
+						<h1 class="display-4 c-darkgray">MK Web Notifications</h1><br>
+						<h3 class="c-gray">A easy to use jQuery plug-in for in browser notifications and toasts</h3><br>
+						<a href="#usage" class="btn btn-primary btn-lg sm-margin"><i class="fa fa-code"></i>&nbsp;Getting Started</a>
+						<a href="#documentation" class="btn btn-info btn-lg sm-margin"><i class="fa fa-book"></i>&nbsp;Documentation</a>
+					</div>
+					<div class="col-md-4">
+						<br><br><br>
+						<div class="card">
+					      <div class="card-body">
+					      	<div class="col-md-12 text-center">
+					      		<i class="fa fa-download fa-3x c-gray"></i><br><br>
+					      	</div>
+					        <h5 class="card-title">Download from GitHub</h5>
+					        <p class="card-text">Download the Plug-In from the official GitHub repo.</p>
+					        <a href="#" class="btn btn-success btn-block"><i class="fab fa-github"></i>&nbsp;GitHub</a>
+					      </div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row section usage" id="usage">
+			<div class="col-md-8 offset-md-2">
+				<br>
+				<h3 class="c-darkgray">Getting Started</h3>
+				<p>MK Notifications is a jQuery plug-in the can be used in any jQuery project to allow you to show cool notifications and toasts, it is free to use LICENSE and open soruce, simply follow the <a href="#usage">Getting Started</a> guide below to implement MK Notifications in your project.</p>
+				<a href="https://github.com/<id>" class="btn btn-success btn-lg" target="_blank"><i class="fa fa-download"></i>&nbsp;Download <small>[&nbsp;<i class="fab fa-github"></i>&nbsp;GitHub&nbsp;]</small></a>
+				<br><br>
+
+				<div style="display: none" id="css-code"><link rel="stylesheet" href="src/css/mk-notifications.min.css"></div>
+
+				<textarea class="notexist" style="white-space: pre-line;" id="text-copy"></textarea>
+
+				<h3 class="c-darkgray">CSS</h3>
+				<p>Copy-paste the stylesheet <code class="highlighter-rouge">&lt;link&gt;</code> into your <code class="highlighter-rouge">&lt;head&gt;</code> before all other stylesheets to load our CSS, make sure the src matches your project.</p>
+				<pre class="html text-inline"><span class="a">&lt;link</span> <span class="b">rel=</span><span class="c">"stylesheet"</span> <span class="b">href=</span><span class="c">"src/css/mk-notifications.min.css"</span><span class="a">&gt;</span><a data-toggle="tooltip" data-placement="left" title="Copy to clipboard" class="copy" href="javascript:void(0)" onclick="copyCode('#css-code',event)">Copy</a></pre>
+
+				<div style="display: none" id="js-code"><script href="src/js/mk-notifications.min.js"></script></div>
+
+				<h3 class="c-darkgray">JS</h3>
+				<p>MK Web Notifications uses <a href="https://jquery.com/" target="_blank" rel="nofollow">jQuery</a> JavaScript framework, make sure to include all jQuery scripts before plug-in script.</p>
+				<p>Place the following <code class="highlighter-rouge">&lt;script&gt;</code> near the end of your page, right before closing <code class="highlighter-rouge">&lt;/body&gt;</code> tag and after jQuery script, make sure the href matches your project.</p>
+				<pre class="html text-inline"><span class="a">&lt;script</span> <span class="b">href=</span><span class="c">"src/js/mk-notifications.min.js"</span><span class="a">&gt;</span><span class="a">&lt;/script&gt;</span><a data-toggle="tooltip" data-placement="left" title="Copy to clipboard" class="copy" href="javascript:void(0)" onclick="copyCode('#js-code',event)">Copy</a></pre>
+
+				<h3 class="c-darkgray">HTML</h3>
+				<p>To initialize MK Web Notifications plug-in you should call <code class="highlighter-rouge">mkNotifications();</code> function in your DOM Ready function.
+					<pre class="html code-js">$(document).ready(function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="hashed">/* MK Web Notification init */</span><br>&nbsp;&nbsp;&nbsp;&nbsp;mkNotifications();<br>});</pre>For additional configurations please check the <a href="#documentation">Documentation</a> section.</p>
+
+				<h3 class="c-darkgray">Quick Start</h3>
+				<p>Call <code class="highlighter-rouge">mkNoti(title,message,{ <span class="hashed">/* Options */</span> });</code> function in DOM Ready function or in any DOM Ready function or element to show MK Web Notification in default style.
+					<pre class="html code-js"><span class="hashed">/* MK Web Notification Show */</span><br><span class="b">mkNoti(</span><br>&nbsp;&nbsp;&nbsp;&nbsp;'MK Web Notifications (Info)',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Example of generated notification with status Info'<br><span class="b">);</span><a data-toggle="tooltip" data-placement="left" title="Try function" class="try" href="javascript:void(0)" onclick="tryNoti()">Try</a></pre>For notification options please check the <a href="#documentation">Documentation</a> section.</p>
+			</div>
+		</div>
+		<div class="row section examples" id="examples">
+			<div class="col-md-8 offset-md-2">
+				<br>
+				<h2 class="c-darkgray">Examples</h2>
+				<p>Use the Notifications Generator tool to generate any options you want to use, then simple copy the code and use in your project.</p>
+				<br>
+				<h3 class="c-darkgray">Notifications Generator</h3>
+				<div class="col-md-12" id="generate-form-holder">
+					<div class="row">
+						<div class="col-md-6">
+							<h5 class="c-darkgray">Configuration</h5>
+							<div class="form-group row">
+								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification horizontal align">Position X</label>
+								<div class="col-sm-9">
+									<select name="positionX" class="form-control form-control-sm">
+										<option value="top">Top</option>
+										<option value="bottom" selected>Bottom</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification vertical align">Position Y</label>
+								<div class="col-sm-9">
+										<select name="positionY" class="form-control form-control-sm">
+										<option value="right" selected>Right</option>
+										<option value="center">Center</option>
+										<option value="left">Left</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Maximum notifications at same time">Max</label>
+								<div class="col-sm-9">
+									<input type="number" min="1" step="1" name="max" class="form-control form-control-sm" value="5">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification area scroll behavior when overflow">Scrollable</label>
+								<div class="col-sm-4">
+									<label class="switch">
+										<input type="checkbox" name="scrollable" checked>
+										<span class="slider round"></span>
+									</label>
+								</div>
+								<label class="col-form-label col-sm-2 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification direction rtl">RTL</label>
+								<div class="col-sm-3">
+									<label class="switch">
+										<input type="checkbox" name="rtl">
+										<span class="slider round"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h5 class="c-darkgray">Options</h5>
+							<div class="form-group row">
+								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification display style">Status</label>
+								<div class="col-sm-9">
+									<select name="status" class="form-control form-control-sm">
+										<option value="default" selected>Default</option>
+										<option value="primary">Primary</option>
+										<option value="success">Success</option>
+										<option value="danger">Danger</option>
+										<option value="warning">Warning</option>
+										<option value="info">Info</option>
+										<option value="light">Light</option>
+										<option value="dark">Dark</option>
+										<option value="purple">Purple</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Duration before notification dismiss itself (ms: 1000 = 1 second)">Duration</label>
+								<div class="col-sm-9">
+									<input type="number" min="1000" step="1000" name="duration" class="form-control form-control-sm" value="7000">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification close button show/hide">Dismissable</label>
+								<div class="col-sm-9">
+									<label class="switch">
+										<input type="checkbox" name="dismissable" checked>
+										<span class="slider round"></span>
+									</label>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification close callback function">Callback</label>
+								<div class="col-sm-9">
+									<label class="switch">
+										<input type="checkbox" name="callback">
+										<span class="slider round"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h5 class="c-darkgray">Customize</h5>
+						</div>
+						<div class="col-md-6">
+							<h6 class="c-darkgray">Icon</h6>
+							<div class="form-group row">
+								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Icon font class">Class</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form-control-sm" name="class" placeholder="fa fa-info">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Icon font color">Color</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form-control-sm" name="color" placeholder="#FFFFFF">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Icon font background color">Background Color</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form-control-sm" name="background" placeholder="#AEAEAE">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h6 class="c-darkgray">Link</h6>
+							<div class="form-group row">
+								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Link target url">URL</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form-control-sm" name="url" placeholder="http://makdev.net">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Link target attribute">Target</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control form-control-sm" name="target" placeholder="_blank">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Link callback function">Function</label>
+								<div class="col-sm-9">
+									<label class="switch">
+										<input type="checkbox" name="function">
+										<span class="slider round"></span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br><br>
+					<div class="row">
+						<div class="col-md-12">
+							<button class="btn btn-success" onclick="generate();showCode()"><i class="fa fa-comment-alt"></i>&nbsp;Generate</button>
+							<button class="btn btn-warning" onclick="resetGenerator()"><i class="fa fa-eraser"></i>&nbsp;Reset</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<pre class="html code-js dark" id="generated-code-place2">
+				
+					</pre>
+					<pre class="html code-js dark" id="generated-code-place">
+				
+					</pre>
+				</div>
+			</div>
+		</div>
+		<div class="row section usage" id="documentation">
+			<div class="col-md-8 offset-md-2">
+				<br>
+				<h3 class="c-darkgray">Documentation</h3>
+				<h4 class="c-gray">Comming Soon</h4>
+			</div>
+		</div>
+		<div class="row section" id="about">
+			<div class="col-md-8 offset-md-2">
+				<br>
+				<h3 class="c-darkgray">About</h3>
+				<h4 class="c-gray">Developed By <span class="c-darkgray">Mahmoud Kassem</span></h4>
+				<h4 class="c-gray">Website <a href="http://makdev.net" target="_blank">makdev.net</a></h4>
+				<h4 class="c-gray">GitHub <a href="https://github.com/mahkassem" target="_blank">mahkassem</a></h4>
+			</div>
+		</div>
+		<div id="reseted-form" style="display: none">
+			<div class="row">
+				<div class="col-md-6">
+					<h5 class="c-darkgray">Configuration</h5>
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification horizontal align">Position X</label>
+						<div class="col-sm-9">
+							<select name="positionX" class="form-control form-control-sm">
+								<option value="top">Top</option>
+								<option value="bottom" selected>Bottom</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification vertical align">Position Y</label>
+						<div class="col-sm-9">
+								<select name="positionY" class="form-control form-control-sm">
+								<option value="right" selected>Right</option>
+								<option value="center">Center</option>
+								<option value="left">Left</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Maximum notifications at same time">Max</label>
+						<div class="col-sm-9">
+							<input type="number" min="1" step="1" name="max" class="form-control form-control-sm" value="5">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification area scroll behavior when overflow">Scrollable</label>
+						<div class="col-sm-4">
+							<label class="switch">
+								<input type="checkbox" name="scrollable" checked>
+								<span class="slider round"></span>
+							</label>
+						</div>
+						<label class="col-form-label col-sm-2 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification direction rtl">RTL</label>
+						<div class="col-sm-3">
+							<label class="switch">
+								<input type="checkbox" name="rtl">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h5 class="c-darkgray">Options</h5>
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification display style">Status</label>
+						<div class="col-sm-9">
+							<select name="status" class="form-control form-control-sm">
+								<option value="default" selected>Default</option>
+								<option value="primary">Primary</option>
+								<option value="success">Success</option>
+								<option value="danger">Danger</option>
+								<option value="warning">Warning</option>
+								<option value="info">Info</option>
+								<option value="light">Light</option>
+								<option value="dark">Dark</option>
+								<option value="purple">Purple</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Duration before notification dismiss itself (ms: 1000 = 1 second)">Duration</label>
+						<div class="col-sm-9">
+							<input type="number" min="1000" step="1000" name="duration" class="form-control form-control-sm" value="7000">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification close button show/hide">Dismissable</label>
+						<div class="col-sm-9">
+							<label class="switch">
+								<input type="checkbox" name="dismissable" checked>
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification close callback function">Callback</label>
+						<div class="col-sm-9">
+							<label class="switch">
+								<input type="checkbox" name="callback">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h5 class="c-darkgray">Customize</h5>
+				</div>
+				<div class="col-md-6">
+					<h6 class="c-darkgray">Icon</h6>
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Icon font class">Class</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control form-control-sm" name="class" placeholder="fa fa-info">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Icon font color">Color</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control form-control-sm" name="color" placeholder="#FFFFFF">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Icon font background color">Background Color</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control form-control-sm" name="background" placeholder="#AEAEAE">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h6 class="c-darkgray">Link</h6>
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Link target url">URL</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control form-control-sm" name="url" placeholder="http://makdev.net">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Link target attribute">Target</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control form-control-sm" name="target" placeholder="_blank">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Link callback function">Function</label>
+						<div class="col-sm-9">
+							<label class="switch">
+								<input type="checkbox" name="function">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			<div class="row">
+				<div class="col-md-12">
+					<button class="btn btn-success" onclick="generate()"><i class="fa fa-comment-alt"></i>&nbsp;Generate</button>
+					<button class="btn btn-default" onclick="showCode()"><i class="fa fa-code"></i>&nbsp;Show Code</button>
+					<button class="btn btn-warning" onclick="resetGenerator()"><i class="fa fa-eraser"></i>&nbsp;Reset</button>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="src/js/mk-notifications.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
