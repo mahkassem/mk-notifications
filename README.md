@@ -10,7 +10,7 @@ MK Notifications is a jQuery plug-in the can be used in any jQuery project to al
 
 <h3>CSS</h3>
 <p>Copy-paste the stylesheet <link> into your <head> before all other stylesheets to load our CSS, make sure the src matches your project.</p>
-<code><link rel="stylesheet" href="src/css/mk-notifications.min.css"></code>
+  <code>src/css/mk-notifications.min.css</code>
 
 <h3>JS</h3>
 <p>MK Web Notifications uses jQuery JavaScript framework, make sure to include all jQuery scripts before plug-in script.</p>
