@@ -175,7 +175,7 @@ function mkNoti(title, message, mkOptions){
 	var mkNotiCount = $('.on-show').length;
 	var mkMax = $(target).data('max');
 	if(mkNotiCount < mkMax || mkMax == 'null'){
-		setTimeout(function(){$(elm).addClass('show');$(elm).addClass('on-show');},100);
+		setTimeout(function(){$(elm).addClass('mk-show');$(elm).addClass('on-show');},100);
 		setTimeout(function(){$(dismissBtn).click();},config.duration);
 	}else{
 		$(elm).addClass('mk-pending');
@@ -187,7 +187,7 @@ function mkNoti(title, message, mkOptions){
 
 function closeMkNoti(id){
 	var elm = document.getElementById('mk-noti-'+id);
-	$(elm).removeClass('show', $(function(){
+	$(elm).removeClass('mk-show', $(function(){
 		setTimeout(function(){
 			$(elm).remove();
 			var mkNotiCount = $('.on-show').length;
@@ -200,7 +200,7 @@ function closeMkNoti(id){
 						var duration = firstPending.dataset.duration;
 						var dismiss = firstPending.dataset.dismiss;
 						var firstId = firstPending.dataset.unique;
-						setTimeout(function(){$(firstPending).addClass('show');$(firstPending).addClass('on-show');$(firstPending).removeClass('mk-pending');},100);
+						setTimeout(function(){$(firstPending).addClass('mk-show');$(firstPending).addClass('on-show');$(firstPending).removeClass('mk-pending');},100);
 						if(dismiss == 'true'){
 							setTimeout(function(){$('#mk-close-'+firstId).click()},duration);
 						}
