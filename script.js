@@ -330,5 +330,5 @@ function nullFun(name,text)
 function resetGenerator()
 {
 	$('#generate-form-holder').html($('#reseted-form').html());
-	showCode();
+	setTimeout(showCode(),100);
 }
