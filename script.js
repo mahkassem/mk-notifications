@@ -330,5 +330,40 @@ function nullFun(name,text)
 function resetGenerator()
 {
 	$('#generate-form-holder').html($('#reseted-form').html());
+
+	textConf = 
+	'<h3>Configration</h3><p>Pass this object with your mkNotifications() function.</p><span id="generated-code">var config = <br>{<br>'+
+		'&ensp;&ensp;&ensp;&ensp;positionY:&ensp;"'+selVal('positionY')+'",<br>'+
+		'&ensp;&ensp;&ensp;&ensp;positionX:&ensp;"'+selVal('positionX')+'",<br>'+
+		'&ensp;&ensp;&ensp;&ensp;max:&ensp;'+valOr('max',5)+',<br>'+
+		'&ensp;&ensp;&ensp;&ensp;rtl:&ensp;'+truFal('rtl')+',<br>'+
+		'&ensp;&ensp;&ensp;&ensp;scrollable:&ensp;'+truFal('scrollable')+',<br>'+
+	'<br>};<br><br>'+
+	'mkNotifications(config);'+
+	'</span><a data-toggle="tooltip" data-placement="left" title="Copy to clipboard" class="copy" href="javascript:void(0)" onclick="copyCode('+codeGenId+',event)">Copy</a>';
+	textOpt =  
+	'<h3>Options</h3><p>Pass this object with your mkNoti() function.</p><span id="generated-code">var options = <br>{<br>'+
+	'&ensp;&ensp;&ensp;&ensp;status:&ensp;"'+selVal('status')+'",<br>'+
+	'&ensp;&ensp;&ensp;&ensp;icon:&ensp;{<br>'+
+	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;class:&ensp;'+valNul('class')+',<br>'+
+	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;color:&ensp;'+valNul('color')+',<br>'+
+	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;background:&ensp;'+valNul('background')+
+	'<br>&ensp;&ensp;&ensp;&ensp;},<br>'+
+	'&ensp;&ensp;&ensp;&ensp;link:&ensp;{<br>'+
+	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;url:&ensp;'+valNul('url')+',<br>'+
+	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;target:&ensp;"'+valSel('target')+'",<br>'+
+	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;function:&ensp;'+nullFun('function','Link')+
+	'<br>&ensp;&ensp;&ensp;&ensp;},<br>'+
+	'&ensp;&ensp;&ensp;&ensp;dismissable:&ensp;'+truFal('dismissable')+',<br>'+
+	'&ensp;&ensp;&ensp;&ensp;callback:&ensp;'+nullFun('callback','Close')+',<br>'+
+	'&ensp;&ensp;&ensp;&ensp;duration:&ensp;'+valDef('duration')+
+	'<br>};<br><br>'+
+	'mkNoti(<br>'+
+	'&ensp;&ensp;&ensp;&ensp;"MK Web Notifications",<br>'+
+	'&ensp;&ensp;&ensp;&ensp;"Example of generated notification with Notifications Generator",<br>'+
+	'&ensp;&ensp;&ensp;&ensp;options<br>'+
+	');'+
+	'</span><a data-toggle="tooltip" data-placement="left" title="Copy to clipboard" class="copy" href="javascript:void(0)" onclick="copyCode('+codeGenId+',event)">Copy</a>';
+
 	setTimeout(showCode(),100);
 }
