@@ -330,7 +330,5 @@ function nullFun(name,text)
 function resetGenerator()
 {
 	$('#generate-form-holder').html($('#reseted-form').html());
-	$('#generated-code-place').html('');
-	$('#generated-code-place2').html('');
 	showCode();
 }
