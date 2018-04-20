@@ -19,7 +19,7 @@ var icons = {
 var uniqueId = 0;
 
 function mkNotifications(mkConfig){
-	if(mkConfig == null){
+	if(mkConfig == undefined){
 		config = {
 			positionY: 'right',
 			positionX: 'bottom',
@@ -68,7 +68,7 @@ function mkNoti(title, message, mkOptions){
 		callback: null,
 		duration: 7000
 	}
-	if(mkOptions !== null){
+	if(mkOptions !== undefined){
 		var config = {
 			status: mkOptions.status != undefined ? mkOptions.status : 'default',
 			icon: mkOptions.icon == undefined ? config.icon : {
@@ -195,7 +195,7 @@ function closeMkNoti(id){
 			if(mkNotiCount < mkMax || mkMax == 'null'){
 				var forShow = mkMax - mkNotiCount;
 				for(var i = 0; i < forShow; i++){
-					var firstPending = document.getElementsByClassName('mk-pending')[0];
+					var firstPending = document.getElementsByClassName('mk-pending')[document.getElementsByClassName('mk-pending').length - 1];
 					if(firstPending != undefined){
 						var duration = firstPending.dataset.duration;
 						var dismiss = firstPending.dataset.dismiss;
