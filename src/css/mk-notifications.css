@@ -57,8 +57,8 @@ LICENSE: MIT.
 
 
 .mk-notifications.mk-center{
-	left: 25%;
-  	transform: translateX(50%);
+	left: 0;
+	margin-left: calc(50% - 180px);
 }
 
 .mk-notifications > .mk-noti{
@@ -123,11 +123,11 @@ LICENSE: MIT.
 }
 
 .mk-notifications > .mk-noti > .mk-icon{
-	min-width: 75px;
-	min-height: 75px;
-	width: 75px;
-	height: 75px;
-	line-height: 75px;
+	min-width: 80px;
+	min-height: 80px;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
 	vertical-align: middle;
 	text-align: center;
 	font-size: 250%;
@@ -176,7 +176,7 @@ LICENSE: MIT.
 	padding-right: 16px;
 	margin: 0;
 	color:#333;
-	font-size: 95%;
+	font-size: 115%;
 	font-weight: 400;
 }
 
@@ -184,7 +184,7 @@ LICENSE: MIT.
 	padding: 5px;
 	padding-top: 0px;
 	color:#666;
-	font-size: 90%;
+	font-size: 100%;
 	line-height: 18px;
 	font-weight: 300;
 	margin-bottom: 5px;
@@ -213,4 +213,17 @@ LICENSE: MIT.
 }
 .mk-notifications > .mk-noti > .mk-body > .mk-close:hover{
 	color:#666;
+}
+@media screen and (max-width: 420px)
+{
+	.mk-notifications{
+		min-width: 100%;
+	}
+	.mk-notifications > .mk-noti > .mk-body > .mk-close{
+		font-size: 14px;
+		padding: 8px;
+	}
+	.mk-notifications.mk-center{
+		margin-left: 0;
+	}
 }
