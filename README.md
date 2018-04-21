@@ -10,7 +10,7 @@ https://mahkassem.github.io/mk-web-notifications/
 				<p><a href="https://fontawesome.com/icons" target="_blank">Fontawesome</a> is required for the plugin pre setted statues, you can use other webfonts for custom icons, but not recommended.</p>
 <h3>CSS</h3>
 <p>Copy-paste the stylesheet <link> into your <head> before all other stylesheets to load our CSS, make sure the src matches your project.</p>
-  <code>src/css/mk-notifications.min.css</code>
+  <code>>&lt;link rel="stylesheet" href="src/css/mk-notifications.min.css"&gt;</code>
 
 <h3>JS</h3>
 <p>MK Web Notifications uses jQuery JavaScript framework, make sure to include all jQuery scripts before plug-in script.</p>
