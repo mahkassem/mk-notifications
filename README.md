@@ -6,8 +6,8 @@ Awesome examples and documentation are availble at project official page:
 https://mahkassem.github.io/mk-web-notifications/
 
 # Getting Started
-MK Notifications is a jQuery plug-in the can be used in any jQuery project to allow you to show cool notifications and toasts, it is free to use LICENSE and open soruce, simply follow the Getting Started guide below to implement MK Notifications in your project.
-
+<p>MK Notifications is a jQuery plug-in the can be used in any <a href="https://jquery.com/" target="_blank" rel="nofollow">jQuery</a> project to allow you to show cool notifications and toasts, it is free to use LICENSE and open soruce, simply follow the <a href="#usage">Getting Started</a> guide below to implement MK Notifications in your project.</p>
+				<p><a href="https://fontawesome.com/icons" target="_blank">Fontawesome</a> is required for the plugin pre setted statues, you can use other webfonts for custom icons, but not recommended.</p>
 <h3>CSS</h3>
 <p>Copy-paste the stylesheet <link> into your <head> before all other stylesheets to load our CSS, make sure the src matches your project.</p>
   <code>src/css/mk-notifications.min.css</code>
