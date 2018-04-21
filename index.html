@@ -7,7 +7,7 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-	<link rel="stylesheet" href="src/css/mk-notifications.css">
+	<link rel="stylesheet" href="src/css/mk-notifications.min.css">
 	<!-- <link rel="stylesheet" href="src/css/themes/mk-theme-more.css"> -->
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -99,7 +99,7 @@
 
 				<h3 class="c-darkgray">Quick Start</h3>
 				<p>Call <code class="highlighter-rouge">mkNoti(title,message,{ <span class="hashed">/* Options */</span> });</code> function in DOM Ready function or in any DOM Ready function or element to show MK Web Notification in default style.
-					<pre class="html code-js"><span class="hashed">/* MK Web Notification Show */</span><br><span class="b">mkNoti(</span><br>&nbsp;&nbsp;&nbsp;&nbsp;'MK Web Notifications (Info)',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Example of generated notification with status Info'<br><span class="b">);</span><a data-toggle="tooltip" data-placement="left" title="Try function" class="try" href="javascript:void(0)" onclick="tryNoti()">Try</a></pre>For notification options please check the <a href="#documentation">Documentation</a> section.</p>
+					<pre class="html code-js"><span class="hashed">/* MK Web Notification Show */</span><br><span class="b">mkNoti(</span><br>&nbsp;&nbsp;&nbsp;&nbsp;'MK Web Notifications (Info)',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Example of generated notification with status Info',<br>&nbsp;&nbsp;&nbsp;&nbsp;{ sound: true }<br><span class="b">);</span><a data-toggle="tooltip" data-placement="left" title="Try function" class="try" href="javascript:void(0)" onclick="tryNoti()">Try</a></pre>For notification options please check the <a href="#documentation">Documentation</a> section.</p>
 			</div>
 		</div>
 		<div class="row section examples" id="examples">
@@ -180,19 +180,33 @@
 								</div>
 							</div>
 							<div class="form-group row">
-								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification close button show/hide">Dismissable</label>
-								<div class="col-sm-9">
+								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification close button Show/Hide">Dismissable</label>
+								<div class="col-sm-4">
 									<label class="switch">
 										<input type="checkbox" name="dismissable" checked>
+										<span class="slider round"></span>
+									</label>
+								</div>
+								<label class="col-form-label col-sm-2 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification sound On/Off">Sounds</label>
+								<div class="col-sm-3">
+									<label class="switch">
+										<input type="checkbox" name="sound">
 										<span class="slider round"></span>
 									</label>
 								</div>
 							</div>
 							<div class="form-group row">
 								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification close callback function">Callback</label>
-								<div class="col-sm-9">
+								<div class="col-sm-4">
 									<label class="switch">
 										<input type="checkbox" name="callback">
+										<span class="slider round"></span>
+									</label>
+								</div>
+								<label class="col-form-label col-sm-2 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification custome sound files">Custome Sounds</label>
+								<div class="col-sm-3">
+									<label class="switch">
+										<input type="checkbox" name="customSound">
 										<span class="slider round"></span>
 									</label>
 								</div>
@@ -354,19 +368,33 @@
 						</div>
 					</div>
 					<div class="form-group row">
-						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification close button show/hide">Dismissable</label>
-						<div class="col-sm-9">
+						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification close button Show/Hide">Dismissable</label>
+						<div class="col-sm-4">
 							<label class="switch">
 								<input type="checkbox" name="dismissable" checked>
+								<span class="slider round"></span>
+							</label>
+						</div>
+						<label class="col-form-label col-sm-2 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification sound On/Off">Sounds</label>
+						<div class="col-sm-3">
+							<label class="switch">
+								<input type="checkbox" name="sound">
 								<span class="slider round"></span>
 							</label>
 						</div>
 					</div>
 					<div class="form-group row">
 						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification close callback function">Callback</label>
-						<div class="col-sm-9">
+						<div class="col-sm-4">
 							<label class="switch">
 								<input type="checkbox" name="callback">
+								<span class="slider round"></span>
+							</label>
+						</div>
+						<label class="col-form-label col-sm-2 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification custome sound files">Custome Sounds</label>
+						<div class="col-sm-3">
+							<label class="switch">
+								<input type="checkbox" name="customSound">
 								<span class="slider round"></span>
 							</label>
 						</div>
@@ -426,7 +454,7 @@
 			<br><br>
 			<div class="row">
 				<div class="col-md-12">
-					<button class="btn btn-success" onclick="generate()"><i class="fa fa-comment-alt"></i>&nbsp;Generate</button>
+					<button class="btn btn-success" onclick="generate();showCode()"><i class="fa fa-comment-alt"></i>&nbsp;Generate</button>
 					<button class="btn btn-warning" onclick="resetGenerator()"><i class="fa fa-eraser"></i>&nbsp;Reset</button>
 				</div>
 			</div>
@@ -435,7 +463,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="src/js/mk-notifications.js"></script>
+	<script type="text/javascript" src="src/js/mk-notifications.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

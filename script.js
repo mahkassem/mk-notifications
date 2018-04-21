@@ -55,42 +55,6 @@ $(window).bind('load', function() {
 		}
 	});
 
-	$('#mk-noti-example5').addClass('show');
-	setTimeout(function(){$('#mk-noti-example5').removeClass('show', $(function(){
-				setTimeout(function(){$('#mk-noti-example5').remove();},400);
-			}))},5500);
-
-	setTimeout(function(){$('#mk-noti-example4').addClass('show')},1500);
-	setTimeout(function(){$('#mk-noti-example4').removeClass('show', $(function(){
-				setTimeout(function(){$('#mk-noti-example4').remove();},400);
-			}))},10500);
-
-	setTimeout(function(){$('#mk-noti-example3').addClass('show')},2000);
-
-	setTimeout(function(){$('#mk-noti-example2').addClass('show')},2500);
-	setTimeout(function(){$('#mk-noti-example2').removeClass('show', $(function(){
-				setTimeout(function(){$('#mk-noti-example2').remove();},400);
-			}))},8000);
-
-	setTimeout(function(){$('#mk-noti-example1').addClass('show')},3000);
-	setTimeout(function(){$('#mk-noti-example1').removeClass('show', $(function(){
-				setTimeout(function(){$('#mk-noti-example1').remove();},400);
-			}))},9000);
-
-	setTimeout(function(){$('#mk-noti-example').addClass('show')},4500);
-	setTimeout(function(){$('#mk-noti-example').removeClass('show', $(function(){
-				setTimeout(function(){$('#mk-noti-example').remove();},400);
-			}))},6500);
-
-	$('.mk-close').each(function() {
-		$(this).on('click', function(){
-			var parent = $(this).parent('.mk-body');
-			var masterParent = $(parent).parent('.mk-noti');
-			$(masterParent).removeClass('show', $(function(){
-				setTimeout(function(){$(masterParent).remove();},400);
-			}));
-		});
-	});
 });
 
 function tryNoti()
@@ -104,14 +68,15 @@ function tryNoti()
 
 	mkNotifications(mkConfig);
 
-	mkNoti('MK Web Notifications (Info)','Example of generated notification with status Info');
+	mkNoti('MK Web Notifications (Info)','Example of generated notification with status Info', { sound: true });
 }
 
 function copyCode(id,event) {
 	event.preventDefault();
 	var copy = $(id).html();
 	textCopy = copy.replace(/<br\s*[\/]?>/gi, "\r\n");
-	$("#text-copy").val(textCopy);
+	var decodedHTML = $('<textarea />').html(textCopy).text();
+	$("#text-copy").val(decodedHTML);
 
 	document.execCommand('copy', false, $("#text-copy").select());
 
@@ -137,44 +102,213 @@ var oldConf = {
 	};
 
 var codeGenId = "'#generated-code'";
-var textConf = 
-	'<h3>Configration</h3><p>Pass this object with your mkNotifications() function.</p><span id="generated-code">var config = <br>{<br>'+
-		'&ensp;&ensp;&ensp;&ensp;positionY:&ensp;"'+selVal('positionY')+'",<br>'+
-		'&ensp;&ensp;&ensp;&ensp;positionX:&ensp;"'+selVal('positionX')+'",<br>'+
-		'&ensp;&ensp;&ensp;&ensp;max:&ensp;'+valOr('max',5)+',<br>'+
-		'&ensp;&ensp;&ensp;&ensp;rtl:&ensp;'+truFal('rtl')+',<br>'+
-		'&ensp;&ensp;&ensp;&ensp;scrollable:&ensp;'+truFal('scrollable')+',<br>'+
-	'<br>};<br><br>'+
-	'mkNotifications(config);'+
-	'</span><a data-toggle="tooltip" data-placement="left" title="Copy to clipboard" class="copy" href="javascript:void(0)" onclick="copyCode('+codeGenId+',event)">Copy</a>';
+var textConf = '';
 
 var codeGenId2 = "'#generated-code2'";
-var textOpt =  
-	'<h3>Options</h3><p>Pass this object with your mkNoti() function.</p><span id="generated-code2">var options = <br>{<br>'+
-	'&ensp;&ensp;&ensp;&ensp;status:&ensp;"'+selVal('status')+'",<br>'+
-	'&ensp;&ensp;&ensp;&ensp;icon:&ensp;{<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;class:&ensp;'+valNul('class')+',<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;color:&ensp;'+valNul('color')+',<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;background:&ensp;'+valNul('background')+
-	'<br>&ensp;&ensp;&ensp;&ensp;},<br>'+
-	'&ensp;&ensp;&ensp;&ensp;link:&ensp;{<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;url:&ensp;'+valNul('url')+',<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;target:&ensp;"'+valSel('target')+'",<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;function:&ensp;'+nullFun('function','Link')+
-	'<br>&ensp;&ensp;&ensp;&ensp;},<br>'+
-	'&ensp;&ensp;&ensp;&ensp;dismissable:&ensp;'+truFal('dismissable')+',<br>'+
-	'&ensp;&ensp;&ensp;&ensp;callback:&ensp;'+nullFun('callback','Close')+',<br>'+
-	'&ensp;&ensp;&ensp;&ensp;duration:&ensp;'+valDef('duration')+
-	'<br>};<br><br>'+
+var textOpt =  '';
+
+function updateCode() {
+
+	var optionsCount = 0, optionsStart = '<span id="generated-code2">', optionsEnd = '', optionsInCall = '';
+	var status = '';
+	if(selVal('status') != 'default'){
+		status = '&ensp;&ensp;&ensp;&ensp;status:&ensp;"'+selVal('status')+'"';
+		optionsCount++;
+	}
+
+	var startIcon = '', endIcon = '', iClass = '', iColor = '', iBackground = '', iIcon = '';
+	if(valNul('class') != null || valNul('color') != null || valNul('background') != null){
+		var addEnd = '';
+		if(optionsCount >= 1){ addEnd = ',<br>'; }
+		startIcon = addEnd+'&ensp;&ensp;&ensp;&ensp;icon:&ensp;{<br>',
+		endIcon = '<br>&ensp;&ensp;&ensp;&ensp;}';
+		var iCount = 0;
+		if(valNul('class') != null){
+			iClass = '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;class:&ensp;'+valNul('class');
+			iCount++;
+			optionsCount++;
+		}
+		if(valNul('color') != null){
+			var addEnd = '';
+			if(iCount >= 1){ addEnd = ',<br>'; }
+			iColor = addEnd+'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;color:&ensp;'+valNul('color');
+			iCount++;
+			optionsCount++;
+		}
+		if(valNul('background') != null){
+			var addEnd = '';
+			if(iCount >= 1){ addEnd = ',<br>'; }
+			iBackground = addEnd+'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;background:&ensp;'+valNul('background');
+			optionsCount++;
+		}
+	}
+	var iIcon = startIcon+iClass+iColor+iBackground+endIcon;
+
+	var startLink = '', endLink = '', iUrl = '', iTarget = '', iFunction = '', iLink = '';
+	if(valNul('url') != null || valSel('target') != '_self' || nullFun('function') != null){
+		var addEnd = '';
+		if(optionsCount >= 1){ addEnd = ',<br>'; }
+		startLink = addEnd+'&ensp;&ensp;&ensp;&ensp;link:&ensp;{<br>',
+		endLink = '<br>&ensp;&ensp;&ensp;&ensp;}';
+		var iCount = 0;
+		if(valNul('url') != null){
+			iUrl = '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;url:&ensp;'+valNul('url');
+			iCount++;
+			optionsCount++;
+		}
+		if(valSel('target') != '_self'){
+			var addEnd = '';
+			if(iCount >= 1){ addEnd = ',<br>'; }
+			iTarget = addEnd+'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;target:&ensp;'+'"'+valSel('target')+'"';
+			iCount++;
+			optionsCount++;
+		}
+		if(nullFun('function') != null){
+			var addEnd = '';
+			if(iCount >= 1){ addEnd = ',<br>'; }
+			iFunction = addEnd+'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;function:&ensp;'+nullFun('function','Link');
+			iFunction = iFunction.replace('text+\' Callback function\'','\'Link Callback function\'');
+			iFunction = iFunction.replace('() {','() <br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;{');
+			iFunction = iFunction.replace('			','&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;');
+			iFunction = iFunction.replace('		','&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;');
+			optionsCount++;
+		}
+	}
+	var iLink = startLink+iUrl+iTarget+iFunction+endLink;
+
+	var dismissable = '';
+	if(truFal('dismissable') != true){
+		var addEnd = '';
+		if(optionsCount >= 1){ addEnd = ',<br>'; }
+		dismissable = addEnd+'&ensp;&ensp;&ensp;&ensp;dismissable:&ensp;'+truFal('dismissable');
+		optionsCount++;
+	}
+
+	var callback = '';
+	if(nullFun('callback','Close') != null){
+		var addEnd = '';
+		if(optionsCount >= 1){ addEnd = ',<br>'; }
+		callback = addEnd+'&ensp;&ensp;&ensp;&ensp;callback:&ensp;'+nullFun('callback','Close');
+		callback = callback.replace('text+\' Callback function\'','\'Close Callback function\'');
+		callback = callback.replace('() {','() <br>&ensp;&ensp;&ensp;&ensp;{');
+		callback = callback.replace('			','&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;');
+		callback = callback.replace('		','&ensp;&ensp;&ensp;&ensp;');
+		optionsCount++;
+	}
+
+	var sound = '';
+	if(truFal('sound') != false){
+		var addEnd = '';
+		if(optionsCount >= 1){ addEnd = ',<br>'; }
+		sound = addEnd+'&ensp;&ensp;&ensp;&ensp;sound:&ensp;'+truFal('sound');
+		optionsCount++;
+	}
+
+	var customSound = '';
+	if(truFal('customSound') != false){
+		var addEnd = '';
+		if(optionsCount >= 1){ addEnd = ',<br>'; }
+		customSound = addEnd+'&ensp;&ensp;&ensp;&ensp;customSound:&ensp;{<br>'+
+							 '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;onShow: "./src/sound/custom-notification.mp3",<br>'+
+							 '&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;onClose: "./src/sound/custom-close.mp3"<br>'+
+							 '&ensp;&ensp;&ensp;&ensp;}';
+		optionsCount++;
+	}
+
+	var duration = '';
+	if(valDef('duration') != 7000){
+		var addEnd = '';
+		if(optionsCount >= 1){ addEnd = ',<br>'; }
+		duration = addEnd+'&ensp;&ensp;&ensp;&ensp;duration:&ensp;'+valDef('duration');
+		optionsCount++;
+	}
+
+	if(optionsCount > 0){
+		optionsStart = '<p>Pass this object with your mkNoti() function.</p><span id="generated-code2">var options = <br>{<br>',
+		optionsEnd = '<br>};<br><br>',
+		optionsInCall = ',<br>&ensp;&ensp;&ensp;&ensp;options';
+	}
+
+	textOpt =  
+	'<h3>Options</h3>'+optionsStart+
+	status+
+	iIcon+
+	iLink+
+	dismissable+
+	callback+
+	sound+
+	customSound+
+	duration+
+	optionsEnd+
 	'mkNoti(<br>'+
 	'&ensp;&ensp;&ensp;&ensp;"MK Web Notifications",<br>'+
-	'&ensp;&ensp;&ensp;&ensp;"Example of generated notification with Notifications Generator",<br>'+
-	'&ensp;&ensp;&ensp;&ensp;options<br>'+
+	'&ensp;&ensp;&ensp;&ensp;"Example of generated notification with Notifications Generator"'+optionsInCall+'<br>'+
 	');'+
 	'</span><a data-toggle="tooltip" data-placement="left" title="Copy to clipboard" class="copy" href="javascript:void(0)" onclick="copyCode('+codeGenId2+',event)">Copy</a>';
 
+	var configCount = 0, configStart = '<span id="generated-code">', configEnd = '', configInCall = '';
+
+	var positionY = '';
+	if(selVal('positionY') != 'right'){
+		positionY = '&ensp;&ensp;&ensp;&ensp;positionY:&ensp;"'+selVal('positionY')+'"';
+		configCount++;
+	}
+
+	var positionX = '';
+	if(selVal('positionX') != 'bottom'){
+		var addEnd = '';
+		if(configCount >= 1){ addEnd = ',<br>'; }
+		positionX = addEnd+'&ensp;&ensp;&ensp;&ensp;positionX:&ensp;"'+selVal('positionX')+'"';
+		configCount++;
+	}
+
+	var max = '';
+	if(valOr('max',5) != 5){
+		var addEnd = '';
+		if(configCount >= 1){ addEnd = ',<br>'; }
+		max = addEnd+'&ensp;&ensp;&ensp;&ensp;max:&ensp;'+valOr('max',5);
+		configCount++;
+	}
+
+	var rtl = '';
+	if(truFal('rtl') != false){
+		var addEnd = '';
+		if(configCount >= 1){ addEnd = ',<br>'; }
+		rtl = addEnd+'&ensp;&ensp;&ensp;&ensp;rtl:&ensp;'+truFal('rtl');
+		configCount++;
+	}
+
+	var scrollable = '';
+	if(truFal('scrollable') != true){
+		var addEnd = '';
+		if(configCount >= 1){ addEnd = ',<br>'; }
+		scrollable = addEnd+'&ensp;&ensp;&ensp;&ensp;scrollable:&ensp;'+truFal('scrollable');
+		configCount++;
+	}
+
+
+
+	if(configCount > 0){
+		configStart = '<p>Pass this object with your mkNotifications() function.</p><span id="generated-code">var config = <br>{<br>',
+		configEnd = '<br>};<br><br>',
+		configInCall = 'config';
+	}
+
+	textConf = 
+	'<h3>Configration</h3>'+configStart+
+		positionY+
+		positionX+
+		max+
+		rtl+
+		scrollable+
+	configEnd+
+	'mkNotifications('+configInCall+');'+
+	'</span><a data-toggle="tooltip" data-placement="left" title="Copy to clipboard" class="copy" href="javascript:void(0)" onclick="copyCode('+codeGenId+',event)">Copy</a>';
+}
+
 function showCode()
 {
+	updateCode();
 	$('#generated-code-place').html(textOpt);
 	$('#generated-code-place2').html(textConf);
 	$('[data-toggle="tooltip"]').tooltip();
@@ -196,18 +330,6 @@ function generate(){
 
 	oldConf = config;
 
-	textConf = 
-	'<h3>Configration</h3><p>Pass this object with your mkNotifications() function.</p><span id="generated-code">var config = <br>{<br>'+
-		'&ensp;&ensp;&ensp;&ensp;positionY:&ensp;"'+selVal('positionY')+'",<br>'+
-		'&ensp;&ensp;&ensp;&ensp;positionX:&ensp;"'+selVal('positionX')+'",<br>'+
-		'&ensp;&ensp;&ensp;&ensp;max:&ensp;'+valOr('max',5)+',<br>'+
-		'&ensp;&ensp;&ensp;&ensp;rtl:&ensp;'+truFal('rtl')+',<br>'+
-		'&ensp;&ensp;&ensp;&ensp;scrollable:&ensp;'+truFal('scrollable')+',<br>'+
-	'<br>};<br><br>'+
-	'mkNotifications(config);'+
-	'</span><a data-toggle="tooltip" data-placement="left" title="Copy to clipboard" class="copy" href="javascript:void(0)" onclick="copyCode('+codeGenId+',event)">Copy</a>';
-
-
 	var options =  
 	{
 		status: selVal('status'),
@@ -221,34 +343,18 @@ function generate(){
 			target: valSel('target'),
 			function: nullFun('function','Link')
 		},
+		sound: truFal('sound'),
 		dismissable: truFal('dismissable'),
 		callback: nullFun('callback','Close'),
 		duration: valDef('duration')
 	};
 
-	textOpt =  
-	'<h3>Options</h3><p>Pass this object with your mkNoti() function.</p><span id="generated-code">var options = <br>{<br>'+
-	'&ensp;&ensp;&ensp;&ensp;status:&ensp;"'+selVal('status')+'",<br>'+
-	'&ensp;&ensp;&ensp;&ensp;icon:&ensp;{<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;class:&ensp;'+valNul('class')+',<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;color:&ensp;'+valNul('color')+',<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;background:&ensp;'+valNul('background')+
-	'<br>&ensp;&ensp;&ensp;&ensp;},<br>'+
-	'&ensp;&ensp;&ensp;&ensp;link:&ensp;{<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;url:&ensp;'+valNul('url')+',<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;target:&ensp;"'+valSel('target')+'",<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;function:&ensp;'+nullFun('function','Link')+
-	'<br>&ensp;&ensp;&ensp;&ensp;},<br>'+
-	'&ensp;&ensp;&ensp;&ensp;dismissable:&ensp;'+truFal('dismissable')+',<br>'+
-	'&ensp;&ensp;&ensp;&ensp;callback:&ensp;'+nullFun('callback','Close')+',<br>'+
-	'&ensp;&ensp;&ensp;&ensp;duration:&ensp;'+valDef('duration')+
-	'<br>};<br><br>'+
-	'mkNoti(<br>'+
-	'&ensp;&ensp;&ensp;&ensp;"MK Web Notifications",<br>'+
-	'&ensp;&ensp;&ensp;&ensp;"Example of generated notification with Notifications Generator",<br>'+
-	'&ensp;&ensp;&ensp;&ensp;options<br>'+
-	');'+
-	'</span><a data-toggle="tooltip" data-placement="left" title="Copy to clipboard" class="copy" href="javascript:void(0)" onclick="copyCode('+codeGenId+',event)">Copy</a>';
+	if(truFal('customSound') == true){
+		options.customSound = {
+			onShow: './src/sound/custom-notification.mp3',
+			onClose: './src/sound/custom-close.mp3'
+		}
+	}
 
 	mkNoti(
 		'MK Web Notifications',
@@ -318,7 +424,7 @@ function nullFun(name,text)
 {
 	if($('input[name='+name+']').first().is(':checked')){
 		var defFunc = function() {
-			alert(text+' Callback function');
+			mkNoti(text+' Callback function','This is the callback function.', { status: 'success' });
 		};
 		var val = defFunc;
 		return defFunc;
@@ -330,40 +436,5 @@ function nullFun(name,text)
 function resetGenerator()
 {
 	$('#generate-form-holder').html($('#reseted-form').html());
-
-	textConf = 
-	'<h3>Configration</h3><p>Pass this object with your mkNotifications() function.</p><span id="generated-code">var config = <br>{<br>'+
-		'&ensp;&ensp;&ensp;&ensp;positionY:&ensp;"'+selVal('positionY')+'",<br>'+
-		'&ensp;&ensp;&ensp;&ensp;positionX:&ensp;"'+selVal('positionX')+'",<br>'+
-		'&ensp;&ensp;&ensp;&ensp;max:&ensp;'+valOr('max',5)+',<br>'+
-		'&ensp;&ensp;&ensp;&ensp;rtl:&ensp;'+truFal('rtl')+',<br>'+
-		'&ensp;&ensp;&ensp;&ensp;scrollable:&ensp;'+truFal('scrollable')+',<br>'+
-	'<br>};<br><br>'+
-	'mkNotifications(config);'+
-	'</span><a data-toggle="tooltip" data-placement="left" title="Copy to clipboard" class="copy" href="javascript:void(0)" onclick="copyCode('+codeGenId+',event)">Copy</a>';
-	textOpt =  
-	'<h3>Options</h3><p>Pass this object with your mkNoti() function.</p><span id="generated-code">var options = <br>{<br>'+
-	'&ensp;&ensp;&ensp;&ensp;status:&ensp;"'+selVal('status')+'",<br>'+
-	'&ensp;&ensp;&ensp;&ensp;icon:&ensp;{<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;class:&ensp;'+valNul('class')+',<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;color:&ensp;'+valNul('color')+',<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;background:&ensp;'+valNul('background')+
-	'<br>&ensp;&ensp;&ensp;&ensp;},<br>'+
-	'&ensp;&ensp;&ensp;&ensp;link:&ensp;{<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;url:&ensp;'+valNul('url')+',<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;target:&ensp;"'+valSel('target')+'",<br>'+
-	'&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;function:&ensp;'+nullFun('function','Link')+
-	'<br>&ensp;&ensp;&ensp;&ensp;},<br>'+
-	'&ensp;&ensp;&ensp;&ensp;dismissable:&ensp;'+truFal('dismissable')+',<br>'+
-	'&ensp;&ensp;&ensp;&ensp;callback:&ensp;'+nullFun('callback','Close')+',<br>'+
-	'&ensp;&ensp;&ensp;&ensp;duration:&ensp;'+valDef('duration')+
-	'<br>};<br><br>'+
-	'mkNoti(<br>'+
-	'&ensp;&ensp;&ensp;&ensp;"MK Web Notifications",<br>'+
-	'&ensp;&ensp;&ensp;&ensp;"Example of generated notification with Notifications Generator",<br>'+
-	'&ensp;&ensp;&ensp;&ensp;options<br>'+
-	');'+
-	'</span><a data-toggle="tooltip" data-placement="left" title="Copy to clipboard" class="copy" href="javascript:void(0)" onclick="copyCode('+codeGenId+',event)">Copy</a>';
-
 	setTimeout(showCode(),100);
 }

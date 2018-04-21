@@ -16,6 +16,9 @@ var icons = {
 	purple:  'fa fa-bell'
 };
 
+var defaultSound = './src/sound/notification.mp3',
+	defaultClose = './src/sound/close.mp3';
+
 var uniqueId = 0;
 
 function mkNotifications(mkConfig){
@@ -66,6 +69,8 @@ function mkNoti(title, message, mkOptions){
 		},
 		dismissable: true,
 		callback: null,
+		sound: false,
+		customSound: null,
 		duration: 7000
 	}
 	if(mkOptions !== undefined){
@@ -83,6 +88,11 @@ function mkNoti(title, message, mkOptions){
 			},
 			dismissable: mkOptions.dismissable != undefined ? mkOptions.dismissable : true,
 			callback: mkOptions.callback != undefined ? mkOptions.callback : null,
+			sound: mkOptions.sound != undefined ? mkOptions.sound : false,
+			customSound: mkOptions.customSound == undefined ? config.customSound : {
+				onShow: mkOptions.customSound.onShow != undefined ? mkOptions.customSound.onShow : defaultSound,
+				onClose: mkOptions.customSound.onClose != undefined ? mkOptions.customSound.onClose : defaultClose
+			},
 			duration: mkOptions.duration != undefined ? mkOptions.duration : 7000
 		}
 	}
@@ -137,7 +147,38 @@ function mkNoti(title, message, mkOptions){
 		dismissAction = true;
 	}
 
-	var notification = '<div class="mk-noti mk-'+config.status+'" data-unique="'+setUniqueId+'" data-dismiss="'+dismissAction+'" data-callback="'+callback+'" data-duration="'+config.duration+'" id="mk-noti-'+setUniqueId+'">'+
+	var ifSound = false;
+	var ifClose = false;
+	if(config.sound !== false){
+		if(config.customSound != undefined){
+
+			if(config.customSound.onShow != undefined){
+				ifSound = config.customSound.onShow;
+				ifSound = encodeURI(ifSound);
+			}else{
+				ifSound = defaultSound;
+				ifSound = encodeURI(ifSound);
+			}
+
+			if(config.customSound.onClose != undefined){
+				ifClose = config.customSound.onClose;
+				ifClose = encodeURI(ifClose);
+			}else{
+				ifClose = defaultClose;
+				ifClose = encodeURI(ifClose);
+			}
+
+		}else{
+
+			ifSound = defaultSound;
+			ifSound = encodeURI(ifSound);
+			ifClose = defaultClose;
+			ifClose = encodeURI(ifClose);
+			
+		}
+	}
+
+	var notification = '<div class="mk-noti mk-'+config.status+'" data-unique="'+setUniqueId+'" data-sound="'+ifSound+'" data-close="'+ifClose+'" data-dismiss="'+dismissAction+'" data-callback="'+callback+'" data-duration="'+config.duration+'" id="mk-noti-'+setUniqueId+'">'+
 							'<div'+iconStyle+' class="mk-icon">'+
 								icon+
 							'</div>'+
@@ -163,6 +204,7 @@ function mkNoti(title, message, mkOptions){
 	var elm = document.getElementById('mk-noti-'+setUniqueId);
 
 	if(config.link.url != null){
+		$(elm).addClass('mk-clickable');
 		$(elm).on('click', function(event){
 			event.stopImmediatePropagation();
 			window.open(config.link.url,config.link.target);
@@ -170,12 +212,22 @@ function mkNoti(title, message, mkOptions){
 				config.link.function();
 			}
 		});
+	}else if(config.link.url == null && config.link.function != null){
+		$(elm).addClass('mk-clickable');
+		$(elm).on('click', function(event){
+			event.stopImmediatePropagation();
+			config.link.function();
+		});
 	}
 
 	var mkNotiCount = $('.on-show').length;
 	var mkMax = $(target).data('max');
 	if(mkNotiCount < mkMax || mkMax == 'null'){
-		setTimeout(function(){$(elm).addClass('mk-show');$(elm).addClass('on-show');},100);
+		setTimeout(function(){
+			$(elm).addClass('mk-show');
+			$(elm).addClass('on-show');
+			mkSound(ifSound);
+		},100);
 		setTimeout(function(){$(dismissBtn).click();},config.duration);
 	}else{
 		$(elm).addClass('mk-pending');
@@ -187,6 +239,8 @@ function mkNoti(title, message, mkOptions){
 
 function closeMkNoti(id){
 	var elm = document.getElementById('mk-noti-'+id);
+	var elmIfClose = elm.dataset.close;
+	mkSound(elmIfClose);
 	$(elm).removeClass('mk-show', $(function(){
 		setTimeout(function(){
 			$(elm).remove();
@@ -200,7 +254,13 @@ function closeMkNoti(id){
 						var duration = firstPending.dataset.duration;
 						var dismiss = firstPending.dataset.dismiss;
 						var firstId = firstPending.dataset.unique;
-						setTimeout(function(){$(firstPending).addClass('mk-show');$(firstPending).addClass('on-show');$(firstPending).removeClass('mk-pending');},100);
+						var ifSound = firstPending.dataset.sound;
+						setTimeout(function(){
+							$(firstPending).addClass('mk-show');
+							$(firstPending).addClass('on-show');
+							$(firstPending).removeClass('mk-pending');
+							mkSound(ifSound);
+						},100);
 						if(dismiss == 'true'){
 							setTimeout(function(){$('#mk-close-'+firstId).click()},duration);
 						}
@@ -210,4 +270,12 @@ function closeMkNoti(id){
 			return;
 		},400);
 	}));
+}
+
+function mkSound(sound){
+	if(sound !== 'false' && sound !== false){
+		var sound = new Audio(decodeURI(sound));
+		sound.loop = false;
+		sound.play();
+	}
 }
