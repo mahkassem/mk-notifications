@@ -1,6 +1,12 @@
 # MK Web Notifications
 A easy to use jQuery plug-in for in browser notifications and toasts
 
+# Version 1.5.0
+<b>change-log</b>
+- Added on show and on close sound options with custom sounds option.
+- Improved Notification Generator.
+- Fix errors and bugs.
+
 # How to use
 Awesome examples and documentation are availble at project official page: 
 https://mahkassem.github.io/mk-web-notifications/
