@@ -94,15 +94,15 @@ $(window).bind('load', function() {
 function tryNoti()
 {
 	var mkConfig = {
-		positionY: 'bottom',
-		positionX: 'right',
+		positionY: 'top',
+		positionX: 'center',
 		max: 5,
 		scrollable: true
 	};
 
 	mkNotifications(mkConfig);
 
-	mkNoti('MK Web Notifications (Info)','Example of generated notification with status Info', { sound: true });
+	mkNoti('MK Web Notifications','Example of generated notification', { sound: true });
 }
 
 function copyCode(id,event) {
