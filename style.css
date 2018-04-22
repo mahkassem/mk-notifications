@@ -39,6 +39,10 @@ body {
 .usage{
 	background: #f1f1f1;
 }
+.section.about{
+	background: #f1f1f1;
+	margin-bottom: 0;
+}
 .html{
 	background: #fff;
 	padding: 16px 12px;

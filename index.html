@@ -72,7 +72,7 @@
 		<div class="row section usage" id="usage">
 			<div class="col-md-8 offset-md-2">
 				<br>
-				<h3 class="c-darkgray">Getting Started</h3>
+				<h3 class="c-darkgray"><i class="fa fa-flag-checkered"></i>&nbsp;Getting Started</h3>
 				<p>MK Notifications is a jQuery plug-in the can be used in any <a href="https://jquery.com/" target="_blank" rel="nofollow">jQuery</a> project to allow you to show cool notifications and toasts, it is free to use LICENSE and open soruce, simply follow the <a href="#usage">Getting Started</a> guide below to implement MK Notifications in your project.</p>
 				<p><a href="https://fontawesome.com/icons" target="_blank">Fontawesome</a> is required for the plugin pre setted statues, you can use other webfonts for custom icons, but not recommended.</p>
 				<a href="https://github.com/mahkassem/mk-web-notifications/archive/master.zip" class="btn btn-success btn-lg" target="_blank"><i class="fa fa-download"></i>&nbsp;Download <small>[&nbsp;<i class="fab fa-github"></i>&nbsp;GitHub&nbsp;]</small></a>
@@ -82,22 +82,22 @@
 
 				<textarea class="notexist" style="white-space: pre-line;" id="text-copy"></textarea>
 
-				<h3 class="c-darkgray">CSS</h3>
+				<h3 class="c-darkgray"><i class="fab fa-css3-alt"></i>&nbsp;CSS</h3>
 				<p>Copy-paste the stylesheet <code class="highlighter-rouge">&lt;link&gt;</code> into your <code class="highlighter-rouge">&lt;head&gt;</code> before all other stylesheets to load our CSS, make sure the src matches your project.</p>
 				<pre class="html text-inline"><span class="a">&lt;link</span> <span class="b">rel=</span><span class="c">"stylesheet"</span> <span class="b">href=</span><span class="c">"src/css/mk-notifications.min.css"</span><span class="a">&gt;</span><a data-toggle="tooltip" data-placement="left" title="Copy to clipboard" class="copy" href="javascript:void(0)" onclick="copyCode('#css-code',event)">Copy</a></pre>
 
 				<div style="display: none" id="js-code">&lt;script href="src/js/mk-notifications.min.js"&gt;&lt;/script&gt;</div>
 
-				<h3 class="c-darkgray">JS</h3>
+				<h3 class="c-darkgray"><i class="fab fa-js"></i>&nbsp;JS</h3>
 				<p>MK Web Notifications uses <a href="https://jquery.com/" target="_blank" rel="nofollow">jQuery</a> JavaScript framework, make sure to include all jQuery scripts before plug-in script.</p>
 				<p>Place the following <code class="highlighter-rouge">&lt;script&gt;</code> near the end of your page, right before closing <code class="highlighter-rouge">&lt;/body&gt;</code> tag and after jQuery script, make sure the href matches your project.</p>
 				<pre class="html text-inline"><span class="a">&lt;script</span> <span class="b">href=</span><span class="c">"src/js/mk-notifications.min.js"</span><span class="a">&gt;</span><span class="a">&lt;/script&gt;</span><a data-toggle="tooltip" data-placement="left" title="Copy to clipboard" class="copy" href="javascript:void(0)" onclick="copyCode('#js-code',event)">Copy</a></pre>
 
-				<h3 class="c-darkgray">HTML</h3>
+				<h3 class="c-darkgray"><i class="fab fa-html5"></i>&nbsp;HTML</h3>
 				<p>To initialize MK Web Notifications plug-in you should call <code class="highlighter-rouge">mkNotifications();</code> function in your DOM Ready function.
 					<pre class="html code-js">$(document).ready(function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="hashed">/* MK Web Notification init */</span><br>&nbsp;&nbsp;&nbsp;&nbsp;mkNotifications();<br>});</pre>For additional configurations please check the <a href="#documentation">Documentation</a> section.</p>
 
-				<h3 class="c-darkgray">Quick Start</h3>
+				<h3 class="c-darkgray"><i class="fa fa-rocket"></i>&nbsp;Quick Start</h3>
 				<p>Call <code class="highlighter-rouge">mkNoti(title,message,{ <span class="hashed">/* Options */</span> });</code> function in DOM Ready function or in any DOM Ready function or element to show MK Web Notification in default style.
 					<pre class="html code-js"><span class="hashed">/* MK Web Notification Show */</span><br><span class="b">mkNoti(</span><br>&nbsp;&nbsp;&nbsp;&nbsp;'MK Web Notifications (Info)',<br>&nbsp;&nbsp;&nbsp;&nbsp;'Example of generated notification with status Info',<br>&nbsp;&nbsp;&nbsp;&nbsp;{ sound: true }<br><span class="b">);</span><a data-toggle="tooltip" data-placement="left" title="Try function" class="try" href="javascript:void(0)" onclick="tryNoti()">Try</a></pre>For notification options please check the <a href="#documentation">Documentation</a> section.</p>
 			</div>
@@ -105,10 +105,10 @@
 		<div class="row section examples" id="examples">
 			<div class="col-md-8 offset-md-2">
 				<br>
-				<h2 class="c-darkgray">Examples</h2>
+				<h2 class="c-darkgray"><i class="fab fa-readme"></i>&nbsp;Examples</h2>
 				<p>Use the Notifications Generator tool to generate any options you want to use, then simple copy the code and use in your project.</p>
 				<br>
-				<h3 class="c-gray">Theme CSS</h3>
+				<h3 class="c-darkgray"><i class="fa fa-paint-brush"></i>&nbsp;Themes</h3>
 				<p>Build your own custom theme or use the secondery theme by calling it right after css file.</p>
 
 				<div class="form-group row">
@@ -125,11 +125,11 @@
 
 				<pre class="html text-inline dark-dark" id="theme-code" style="display: none"><span class="a">&lt;link</span> <span class="b">rel=</span><span class="c">"stylesheet"</span> <span class="b">href=</span><span class="c">"src/css/mk-theme-more.css"</span><span class="a">&gt;</span><a data-toggle="tooltip" data-placement="left" title="Copy to clipboard" class="copy" href="javascript:void(0)" onclick="copyCode('#css-theme',event)">Copy</a></pre>
 				<br>
-				<h3 class="c-darkgray">Notifications Generator</h3>
+				<h3 class="c-darkgray"><i class="fa fa-cog"></i>&nbsp;Notifications Generator</h3><br>
 				<div class="col-md-12" id="generate-form-holder">
 					<div class="row">
 						<div class="col-md-6">
-							<h5 class="c-darkgray">Configuration</h5>
+							<h5 class="c-darkgray"><i class="fa fa-cogs"></i>&nbsp;Configuration</h5><br>
 							<div class="form-group row">
 								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification horizontal align">Position X</label>
 								<div class="col-sm-9">
@@ -173,7 +173,7 @@
 							</div>
 						</div>
 						<div class="col-md-6">
-							<h5 class="c-darkgray">Options</h5>
+							<h5 class="c-darkgray"><i class="fa fa-sliders-h"></i>&nbsp;Options</h5><br>
 							<div class="form-group row">
 								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification display style">Status</label>
 								<div class="col-sm-9">
@@ -232,10 +232,10 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<h5 class="c-darkgray">Customize</h5>
+							<h5 class="c-darkgray"><i class="fa fa-paint-brush"></i>&nbsp;Customize</h5><br>
 						</div>
 						<div class="col-md-6">
-							<h6 class="c-darkgray">Icon</h6>
+							<h6 class="c-darkgray"><i class="fa fa-image"></i>&nbsp;Icon</h6>
 							<div class="form-group row">
 								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Icon font class">Class</label>
 								<div class="col-sm-9">
@@ -256,7 +256,7 @@
 							</div>
 						</div>
 						<div class="col-md-6">
-							<h6 class="c-darkgray">Link</h6>
+							<h6 class="c-darkgray"><i class="fa fa-link"></i>&nbsp;Link</h6>
 							<div class="form-group row">
 								<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Link target url">URL</label>
 								<div class="col-sm-9">
@@ -306,14 +306,14 @@
 		<div class="row section" id="documentation">
 			<div class="col-md-8 offset-md-2">
 				<br>
-				<h3 class="c-darkgray">Documentation</h3>
+				<h3 class="c-darkgray"><i class="fa fa-book"></i>&nbsp;Documentation</h3>
 				<h4 class="c-gray">Comming Soon</h4>
 			</div>
 		</div>
-		<div class="row section" id="about">
+		<div class="row section about" id="about">
 			<div class="col-md-8 offset-md-2">
 				<br>
-				<h3 class="c-darkgray">About</h3>
+				<h3 class="c-darkgray"><i class="fa fa-info-circle"></i>&nbsp;About</h3>
 				<h4 class="c-gray">Developed By <span class="c-darkgray">Mahmoud Kassem</span></h4>
 				<h4 class="c-gray">Website <a href="http://makdev.net" target="_blank">makdev.net</a></h4>
 				<h4 class="c-gray">GitHub <a href="https://github.com/mahkassem" target="_blank">mahkassem</a></h4>
@@ -322,7 +322,7 @@
 		<div id="reseted-form" style="display: none">
 			<div class="row">
 				<div class="col-md-6">
-					<h5 class="c-darkgray">Configuration</h5>
+					<h5 class="c-darkgray"><i class="fa fa-cogs"></i>&nbsp;Configuration</h5><br>
 					<div class="form-group row">
 						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification horizontal align">Position X</label>
 						<div class="col-sm-9">
@@ -366,7 +366,7 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<h5 class="c-darkgray">Options</h5>
+					<h5 class="c-darkgray"><i class="fa fa-sliders-h"></i>&nbsp;Options</h5><br>
 					<div class="form-group row">
 						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Notification display style">Status</label>
 						<div class="col-sm-9">
@@ -425,10 +425,10 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<h5 class="c-darkgray">Customize</h5>
+					<h5 class="c-darkgray"><i class="fa fa-paint-brush"></i>&nbsp;Customize</h5><br>
 				</div>
 				<div class="col-md-6">
-					<h6 class="c-darkgray">Icon</h6>
+					<h6 class="c-darkgray"><i class="fa fa-image"></i>&nbsp;Icon</h6>
 					<div class="form-group row">
 						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Icon font class">Class</label>
 						<div class="col-sm-9">
@@ -449,7 +449,7 @@
 					</div>
 				</div>
 				<div class="col-md-6">
-					<h6 class="c-darkgray">Link</h6>
+					<h6 class="c-darkgray"><i class="fa fa-link"></i>&nbsp;Link</h6>
 					<div class="form-group row">
 						<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Link target url">URL</label>
 						<div class="col-sm-9">
