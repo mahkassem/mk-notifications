@@ -5,7 +5,14 @@ A easy to use jQuery plug-in for in browser notifications and toasts
 <b>Change-log:</b>
 - Added on show and on close sound options with custom sounds option.
 - Improved Notification Generator.
-- Fix errors and bugs.
+- Fixed errors and bugs.
+
+# Version 1.5.3
+<b>Change-log:</b>
+- Added theme as option.
+- Improved Notification Generator.
+- Fixed errors and bugs in sound.
+- Improved RTL compatibility.
 
 # How to use
 Awesome examples and documentation are availble at project official page: 
