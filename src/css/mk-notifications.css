@@ -1,5 +1,5 @@
 /* 
-MK Web Notifications v1.0 - jQuery Plug-In Style Sheet.
+MK Web Notifications v1.5.0 - jQuery Plug-In Style Sheet.
 A easy to use jQuery plug-in for in browser notifications and toasts.
 Documentation: https://github.com/<id>.
 LICENSE: MIT. 
@@ -112,6 +112,10 @@ LICENSE: MIT.
 	box-shadow: -1px 1px 5px 1px rgba(0,0,0,0.15);
 }
 
+html[dir=rtl] .mk-notifications.mk-rtl > .mk-noti{
+	flex-direction: row;
+}
+
 .mk-notifications.mk-rtl > .mk-noti:hover{
 	box-shadow: -2px 2px 10px 1px rgba(0,0,0,0.25);
 }
@@ -137,6 +141,10 @@ LICENSE: MIT.
 	text-align: center;
 	font-size: 250%;
 	color:#fff;
+}
+
+.mk-notifications.mk-rtl > .mk-noti > .mk-icon {
+	float: right;
 }
 
 .mk-notifications > .mk-noti.mk-default > .mk-icon{
@@ -183,6 +191,11 @@ LICENSE: MIT.
 	color:#333;
 	font-size: 115%;
 	font-weight: 400;
+}
+
+.mk-notifications.mk-rtl > .mk-noti > .mk-body > .mk-title{
+	padding-right: 5px;
+	padding-left: 16px;
 }
 
 .mk-notifications > .mk-noti > .mk-body > .mk-text{
