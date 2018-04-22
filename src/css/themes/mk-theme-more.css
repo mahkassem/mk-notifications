@@ -1,3 +1,9 @@
+/* 
+MK Web Notifications v1.5.3 - jQuery Plug-In Theme Style Sheet.
+A easy to use jQuery plug-in for in browser notifications and toasts.
+Documentation: https://github.com/<id>.
+LICENSE: MIT. 
+*/
 .mk-notifications > .mk-noti > .mk-icon{
 	border-top-left-radius: 8px;
 	border-bottom-left-radius: 8px;

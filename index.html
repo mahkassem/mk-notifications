@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 	<link rel="stylesheet" href="src/css/mk-notifications.min.css">
-	<!-- <link rel="stylesheet" href="src/css/themes/mk-theme-more.css"> -->
+	<link rel="stylesheet" id="theme" href="">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -107,6 +107,23 @@
 				<br>
 				<h2 class="c-darkgray">Examples</h2>
 				<p>Use the Notifications Generator tool to generate any options you want to use, then simple copy the code and use in your project.</p>
+				<br>
+				<h3 class="c-gray">Theme CSS</h3>
+				<p>Build your own custom theme or use the secondery theme by calling it right after css file.</p>
+
+				<div class="form-group row">
+					<label class="col-form-label col-sm-3 col-form-label-sm" data-toggle="tooltip" data-placement="top" title="Toggle theme On/Off">Toggle Theme</label>
+					<div class="col-sm-9">
+						<label class="switch">
+							<input type="checkbox" id="theme-toggle" name="theme">
+							<span class="slider round"></span>
+						</label>
+					</div>
+				</div>
+
+				<div style="display: none" id="css-theme">&lt;link rel="stylesheet" href="src/css/mk-theme-more.css"&gt;</div>
+
+				<pre class="html text-inline dark-dark" id="theme-code" style="display: none"><span class="a">&lt;link</span> <span class="b">rel=</span><span class="c">"stylesheet"</span> <span class="b">href=</span><span class="c">"src/css/mk-theme-more.css"</span><span class="a">&gt;</span><a data-toggle="tooltip" data-placement="left" title="Copy to clipboard" class="copy" href="javascript:void(0)" onclick="copyCode('#css-theme',event)">Copy</a></pre>
 				<br>
 				<h3 class="c-darkgray">Notifications Generator</h3>
 				<div class="col-md-12" id="generate-form-holder">
@@ -264,25 +281,29 @@
 						</div>
 					</div>
 					<br><br>
-					<div class="row" id="code">
+					<div class="row">
 						<div class="col-md-12">
 							<button class="btn btn-success" onclick="generate();showCode()"><i class="fa fa-comment-alt"></i>&nbsp;Generate</button>
 							<button class="btn btn-warning" onclick="resetGenerator()"><i class="fa fa-eraser"></i>&nbsp;Reset</button>
+							<button class="btn btn-danger" onclick="resetGenerator();mkNotifications()"><i class="fa fa-trash"></i>&nbsp;Clear</button>
 							<a class="btn btn-light" href="#code"><i class="fa fa-code"></i>&nbsp;Code</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-12">
-					<pre class="html code-js dark" id="generated-code-place2">
-				
-					</pre>
-					<pre class="html code-js dark" id="generated-code-place">
-				
-					</pre>
-				</div>
 			</div>
 		</div>
-		<div class="row section usage" id="documentation">
+		<div class="row section usage" id="code">
+			<div class="col-md-8 offset-md-2">
+				<h2 class="c-darkgray"><i class="fa fa-code"></i>&nbsp;Code</h2>
+				<pre class="html code-js dark" id="generated-code-place2">
+		
+				</pre>
+				<pre class="html code-js dark" id="generated-code-place">
+			
+				</pre>
+			</div>
+		</div>
+		<div class="row section" id="documentation">
 			<div class="col-md-8 offset-md-2">
 				<br>
 				<h3 class="c-darkgray">Documentation</h3>
@@ -463,6 +484,7 @@
 				<div class="col-md-12">
 					<button class="btn btn-success" onclick="generate();showCode()"><i class="fa fa-comment-alt"></i>&nbsp;Generate</button>
 					<button class="btn btn-warning" onclick="resetGenerator()"><i class="fa fa-eraser"></i>&nbsp;Reset</button>
+					<button class="btn btn-danger" onclick="resetGenerator();mkNotifications()"><i class="fa fa-trash"></i>&nbsp;Clear</button>
 					<a class="btn btn-light" href="#code"><i class="fa fa-code"></i>&nbsp;Code</a>
 				</div>
 			</div>

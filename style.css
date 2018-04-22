@@ -47,7 +47,6 @@ body {
 	border-radius: 4px;
 }
 .html.dark{
-	background: #f7f7f7;
 	margin-top: 1em;
 }
 .html.code-js{
@@ -74,7 +73,7 @@ body {
 	margin-top: -16px;
 	margin-right: 12px;
 	padding: 16px 12px;
-	color:#999;
+	color: #007bff;
 	background: #fff;
 	border-top-right-radius: 4px;
 	border-bottom-right-radius: 4px;
@@ -82,22 +81,36 @@ body {
 	transition: 0.3s;
 	-webkit-transition: 0.3s;
 }
-.html .copy:hover{
-	color:#333;
-	text-shadow: 0 0 5px rgba(0,0,150,0.2);
-}
 .html.dark .copy{
-	background: #f7f7f7;
+	margin-top: -8px;
+	margin-right: 14px;
+	padding: 12px 12px;
+	background: transparent;
+	border-radius: 0px;
+	border-bottom-right-radius: 4px;
+}
+.html.dark-dark{
+	background: #f1f1f1;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+.html.dark-dark .copy{
+	background: transparent;
+}
+.html .copy:hover{
+	color:#fff;
+	background: #007bff;
+	text-shadow: 0 0 5px rgba(0,0,150,0.2);
 }
 .html .try{
 	position: absolute;
 	right: 0;
 	margin-top: -8px;
-	margin-right: 24px;
-	padding: 8px 12px;
+	margin-right: 14px;
+	padding: 12px 12px;
 	color:#e83e8c;
 	background: transparent;
-	border-radius: 4px;
+	border-radius: 0px;
+	border-bottom-right-radius: 4px;
 	text-decoration: none;
 	transition: 0.3s;
 	-webkit-transition: 0.3s;
@@ -107,7 +120,6 @@ body {
 	background: #e83e8c;
 	text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 }
-
 /* Switch Style 1 */
 .switch, .switch-rtl {
   position: relative;

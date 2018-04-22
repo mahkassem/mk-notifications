@@ -1,5 +1,5 @@
 /* 
-MK Web Notifications v1.0 - jQuery Plug-In JavaScript.
+MK Web Notifications v1.5.3 - jQuery Plug-In JavaScript.
 A easy to use jQuery plug-in for in browser notifications and toasts.
 Documentation: https://github.com/<id>.
 LICENSE: MIT. 
