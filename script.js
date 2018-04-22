@@ -93,15 +93,6 @@ $(window).bind('load', function() {
 
 function tryNoti()
 {
-	var mkConfig = {
-		positionY: 'top',
-		positionX: 'center',
-		max: 5,
-		scrollable: true
-	};
-
-	mkNotifications(mkConfig);
-
 	mkNoti('MK Web Notifications','Example of generated notification', { sound: true });
 }
 
