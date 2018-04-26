@@ -1,0 +1,1632 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pro_",
+				"pro_image\tproperty"
+			],
+			[
+				"ima",
+				"pro_image\tproperty"
+			],
+			[
+				"pro_p",
+				"pro_photo\tproperty"
+			],
+			[
+				"lang",
+				"lang_country\tproperty"
+			],
+			[
+				"getEl",
+				"getElementById\t( elementId: DOMString ): Element Document"
+			],
+			[
+				"card",
+				"cardLocale"
+			],
+			[
+				"home",
+				"home-page-panel"
+			],
+			[
+				"tra",
+				"transform"
+			],
+			[
+				"getE",
+				"getElementById\t( elementId: DOMString ): Element Document"
+			],
+			[
+				"count",
+				"countOf"
+			],
+			[
+				"acti",
+				"activated"
+			],
+			[
+				"ac",
+				"activated"
+			],
+			[
+				"StoreO",
+				"StoreOrderReturn"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"Returns",
+				"ReturnsController"
+			],
+			[
+				"Stor",
+				"StoreOrderItem"
+			],
+			[
+				"Store",
+				"StoreOrderReturnReason"
+			],
+			[
+				"sto",
+				"store_id"
+			],
+			[
+				"recp",
+				"Recipients"
+			],
+			[
+				"rec",
+				"recipients"
+			],
+			[
+				"mes",
+				"messages_ids"
+			],
+			[
+				"fil",
+				"filterMessages"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"name",
+				"name_ar"
+			],
+			[
+				"cont",
+				"contacts-in"
+			],
+			[
+				"Use",
+				"UserContact"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"add-co",
+				"add-contact-btn"
+			],
+			[
+				"resul",
+				"results"
+			],
+			[
+				"fa-s",
+				"fa-spin"
+			],
+			[
+				"sear",
+				"search-results"
+			],
+			[
+				"contac",
+				"contacts"
+			],
+			[
+				"searc",
+				"search-text"
+			],
+			[
+				"fade",
+				"fadeInDown"
+			],
+			[
+				"cl",
+				"clearfix"
+			],
+			[
+				"col-md-",
+				"col-md-6"
+			],
+			[
+				"pr",
+				"prepend\t( nodes_..: Node|DOMString ): void Element"
+			],
+			[
+				"Cont",
+				"ContactsController"
+			],
+			[
+				"add-",
+				"add-contact-loading"
+			],
+			[
+				"add-c",
+				"add-contact-status"
+			],
+			[
+				"prevent",
+				"preventDefault\t(): void Event"
+			],
+			[
+				"conta",
+				"contact_id"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"view",
+				"viewPrefix"
+			],
+			[
+				"item",
+				"item_id"
+			],
+			[
+				"reco",
+				"recommendeds"
+			],
+			[
+				"expire",
+				"expire_date"
+			],
+			[
+				"countri",
+				"country_id"
+			],
+			[
+				"succ",
+				"success"
+			],
+			[
+				"Mess",
+				"MessageType"
+			],
+			[
+				"messa",
+				"message_type_id"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"edit",
+				"editingCategory"
+			],
+			[
+				"add",
+				"add-category-loading"
+			],
+			[
+				"vie",
+				"viewPrefix"
+			],
+			[
+				"Cate",
+				"Category"
+			],
+			[
+				"cate",
+				"categories-area"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"mess",
+				"message_type_id"
+			],
+			[
+				"loca",
+				"location\t: Location Window"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"carer",
+				"career_id"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"image",
+				"image_err"
+			],
+			[
+				"str_r",
+				"str_replace"
+			],
+			[
+				"cat",
+				"categories"
+			],
+			[
+				"app",
+				"app_preferences"
+			],
+			[
+				"store",
+				"store_order_status_id"
+			],
+			[
+				"prim",
+				"primary-check"
+			],
+			[
+				"seac",
+				"search-text"
+			],
+			[
+				"pre",
+				"preventDefault\t(): void Event"
+			],
+			[
+				"repl",
+				"replace"
+			],
+			[
+				"recpi",
+				"recipient"
+			],
+			[
+				"create",
+				"created_at"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"mail-",
+				"mail-body"
+			],
+			[
+				"MessageRe",
+				"MessageReply"
+			],
+			[
+				"boxs",
+				"box-shadow"
+			],
+			[
+				"hr",
+				"hr-line-dashed"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"is",
+				"is_array"
+			],
+			[
+				"first",
+				"first_name"
+			],
+			[
+				"fir",
+				"first_name"
+			],
+			[
+				"Messa",
+				"MessagesController"
+			],
+			[
+				"check",
+				"check_all"
+			],
+			[
+				"fa-arrow",
+				"fa-arrow-left"
+			],
+			[
+				"dele",
+				"deleted_at"
+			],
+			[
+				"chec",
+				"check_all"
+			],
+			[
+				"impo",
+				"important"
+			],
+			[
+				"removeC",
+				"removeClass"
+			],
+			[
+				"appM",
+				"appMsgsTarget"
+			],
+			[
+				"folder",
+				"foldersUnread"
+			],
+			[
+				"jso",
+				"json_encode"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"imp",
+				"important"
+			],
+			[
+				"strto",
+				"strtotime"
+			],
+			[
+				"message",
+				"message_type_id"
+			],
+			[
+				"refre",
+				"refresh-button"
+			],
+			[
+				"Mes",
+				"MessagesController"
+			],
+			[
+				"att",
+				"attachments"
+			],
+			[
+				"getEle",
+				"getElementsByClassName\t( classNames: DOMString ): HTMLCollection Document"
+			],
+			[
+				"console",
+				"console_log"
+			],
+			[
+				"clo",
+				"close-fm"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"send",
+				"send-message"
+			],
+			[
+				"show",
+				"show_count"
+			],
+			[
+				"chan",
+				"changeCount"
+			],
+			[
+				"refr",
+				"refresh-icon"
+			],
+			[
+				"unr",
+				"unread"
+			],
+			[
+				"unre",
+				"unreadText"
+			],
+			[
+				"sta",
+				"status-change"
+			],
+			[
+				"stat",
+				"status-icon"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"input",
+				"input-group"
+			],
+			[
+				"modal-",
+				"modal-lg"
+			],
+			[
+				"new",
+				"new_password"
+			],
+			[
+				"success",
+				"successfullly"
+			],
+			[
+				"form",
+				"form-group"
+			],
+			[
+				"get",
+				"getCities"
+			],
+			[
+				"cities",
+				"cities_of_country"
+			],
+			[
+				"cou",
+				"country_id"
+			],
+			[
+				"gender",
+				"gender-icon"
+			],
+			[
+				"new_p",
+				"new_password_confirmation"
+			],
+			[
+				"le",
+				"length\t: unsigned long Window"
+			],
+			[
+				"passw",
+				"password-strength"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 446.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"set ty",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"set",
+				"Set Syntax: SCSS"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"qui",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"fin",
+				"Find: In..."
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"find",
+				"Find: In..."
+			],
+			[
+				"make:c",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"set j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"con",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"make",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"cont",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"makem",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"ad",
+				"Git: Add..."
+			],
+			[
+				"pus",
+				"Git: Push Current Branch"
+			],
+			[
+				"model",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"mode",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"mod",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"check",
+				"Git: Checkout Current File"
+			],
+			[
+				"pu",
+				"Git: Pull Current Branch"
+			],
+			[
+				"route",
+				"Laravel Artisan 5: Route:List"
+			],
+			[
+				"mak",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"git res",
+				"Git: Reset (hard) HEAD"
+			],
+			[
+				"set json",
+				"Set Syntax: JSON"
+			],
+			[
+				"git cus",
+				"Git: Custom Command"
+			],
+			[
+				"autosave",
+				"Toggle AutoSave: all files"
+			],
+			[
+				"aut",
+				"Toggle AutoSave: all files"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"auto",
+				"Toggle AutoSave: all files"
+			],
+			[
+				"qu",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"ma",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"bea",
+				"HTMLBeautify"
+			],
+			[
+				"git pull",
+				"Git: Pull"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"htm",
+				"HTMLBeautify"
+			],
+			[
+				"mig",
+				"Laravel Artisan 5: Migrate:Refresh"
+			],
+			[
+				"se",
+				"Set Syntax: PHP"
+			],
+			[
+				"rest hard",
+				"Git: Reset (hard) HEAD"
+			],
+			[
+				"git reset",
+				"Git: Reset (unstage) All"
+			],
+			[
+				"Open",
+				"Terminal: Open in project folder"
+			],
+			[
+				"term",
+				"Terminal: Open"
+			],
+			[
+				"git ad",
+				"Git: Add All"
+			],
+			[
+				"git p",
+				"Git: Pull"
+			],
+			[
+				"git fetch",
+				"Git: Fetch"
+			],
+			[
+				"co",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"ush",
+				"Permute Lines: Shuffle"
+			],
+			[
+				"cach",
+				"Laravel Artisan 5: Config:Cache"
+			],
+			[
+				"opt",
+				"Laravel Artisan 5: Optimize"
+			],
+			[
+				"cache",
+				"Laravel Artisan 5: Config:Cache"
+			],
+			[
+				"opti",
+				"Laravel Artisan 5: Optimize"
+			],
+			[
+				"mid",
+				"Laravel Artisan 5: Make:Middleware"
+			],
+			[
+				"config",
+				"Laravel Artisan 5: Config:Cache"
+			],
+			[
+				"midd",
+				"Laravel Artisan 5: Make:Middleware"
+			],
+			[
+				"controller",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"ch",
+				"Git: Change Branch"
+			],
+			[
+				"new",
+				"Git: New Branch"
+			],
+			[
+				"find in",
+				"Find: In..."
+			],
+			[
+				"find in ",
+				"Find: In Project"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"middl",
+				"Laravel Artisan 5: Make:Middleware"
+			],
+			[
+				"controll",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"s",
+				"Set Syntax: PHP"
+			],
+			[
+				"boxy",
+				"Boxy Theme: Activation"
+			],
+			[
+				"stash",
+				"Git: Stash Changes"
+			],
+			[
+				"arit c",
+				"Laravel Artisan 5: Config:Cache"
+			],
+			[
+				"sta",
+				"Git: Stash Changes"
+			],
+			[
+				"arti a",
+				"Laravel Artisan 5: Make:Auth"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"a",
+				"Git: Add..."
+			],
+			[
+				"box",
+				"Boxy Theme: Activation"
+			],
+			[
+				"Linter",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"lint",
+				"SublimeLinter: No Column Highlights Entire Line"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"blade",
+				"SublimeLinter: Clear Color Scheme Folder"
+			],
+			[
+				"linte",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"activation",
+				"Snippet: Commit the active database transaction."
+			],
+			[
+				"HT",
+				"HTMLPrettify"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"bo",
+				"Boxy Theme: Configuration"
+			],
+			[
+				"quic",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"Mo",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"Model",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"contr",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"contro",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"git cu",
+				"Git: Custom Command"
+			],
+			[
+				"mer",
+				"Git: Merge Branch"
+			],
+			[
+				"q",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"new ",
+				"Git: New Branch"
+			],
+			[
+				"quick",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"bra",
+				"Git: Change Branch"
+			],
+			[
+				"composer u",
+				"Composer: Update"
+			],
+			[
+				"quick ",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"be",
+				"Boxy Theme: Environment"
+			],
+			[
+				"beau",
+				"HTMLBeautify"
+			],
+			[
+				"b",
+				"Boxy Theme: Configuration"
+			],
+			[
+				"linter",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"",
+				"Boxy Theme: Activation"
+			],
+			[
+				"me",
+				"Git: Merge Branch"
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"cha",
+				"Git: Change Branch"
+			],
+			[
+				"p",
+				"Git: Pull"
+			],
+			[
+				"composer",
+				"Composer: Dump Autoload"
+			],
+			[
+				"composer ",
+				"Composer: Dump Autoload"
+			],
+			[
+				"artisan",
+				"Laravel Artisan 5: Config:Cache"
+			],
+			[
+				"HTML",
+				"HTMLPrettify"
+			],
+			[
+				"cus",
+				"Git: Custom Command"
+			],
+			[
+				"git ",
+				"Git: Status"
+			],
+			[
+				"git: pull",
+				"Git: Pull"
+			],
+			[
+				"de",
+				"Git: Delete Branch"
+			],
+			[
+				"c",
+				"Git: Custom Command"
+			],
+			[
+				"cu",
+				"Git: Custom Command"
+			],
+			[
+				"st",
+				"Git: Stash Changes"
+			],
+			[
+				"d",
+				"Git: Delete Branch"
+			],
+			[
+				"file",
+				"Git: Checkout Current File"
+			],
+			[
+				"stash ch",
+				"Git: Stash Changes"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"stas",
+				"Git: Stash Changes"
+			],
+			[
+				"dele",
+				"Git: Delete Branch"
+			],
+			[
+				"new br",
+				"Git: New Branch"
+			],
+			[
+				"php",
+				"HTMLPrettify: Set `node` Path"
+			]
+		],
+		"width": 598.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"Satisfy Dependencies",
+			"Package Control: Satisfy Dependencies",
+			"**\"Package Control: Satisfy Dependencies\"**",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/mahmo/Desktop/mk-notifications"
+	],
+	"file_history":
+	[
+		"/C/Users/mahmo/Desktop/mk-notifications/style.css",
+		"/C/Users/mahmo/Desktop/mk-notifications/index.html",
+		"/C/Users/mahmo/Desktop/mk-notifications/logo.png",
+		"/C/Users/mahmo/Desktop/mk-notifications/favicon.ico",
+		"/C/Users/mahmo/Desktop/mk-notifications/script.js",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/www/index.html",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/platforms/android/res/xml/config.xml",
+		"/C/Users/mahmo/Desktop/dentgram_app/D/src/pages/language-select/language-select.ts",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/platforms/android/build/outputs/logs/manifest-merger-debug-report.txt",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/package.json",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/tslint.json",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/tsconfig.json",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/ionic.config.json",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/src/pages/acc-info/acc-info.scss",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/src/pages/auth-login/auth-login.ts",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/src/pages/auth-login/auth-login.scss",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/src/pages/language-select/language-select.ts",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/src/providers/main-functions/main-functions.ts",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/config.xml",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/node_modules/.bin/acorn",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/cordova.js",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/node_modules/web-animations-js/web-animations.min.js",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/src/pages/match-making-apply/match-making-apply.ts",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/src/pages/catalogue-main/catalogue-main.ts",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/src/pages/item-details/item-details.html",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/src/pages/match-making-details/match-making-details.ts",
+		"/C/Users/mahmo/Desktop/dentgram_app/project/src/pages/courses-list/courses-list.ts",
+		"/C/Users/mahmo/AppData/Local/Temp/Rar$DIa4276.7621/package.json",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Supplier/Store/StoreSettingsController.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/stores/edit.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Middleware/Admin.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Middleware/Supplier.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/UserPreference.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Api/Auth/SigninController.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Api/Auth/RegisterController.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/home.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/supplier/home.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/public/css/rtl-fix.css",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/PreferencesController.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/welcome.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/layouts/sidemenu/supplier.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/layouts/sidemenu/admin.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/public/css/style.css",
+		"/C/Users/mahmo/Desktop/dentgram/public/css/app.css",
+		"/C/Users/mahmo/Desktop/dentgram/public/css/dashboard-sidemenu.css",
+		"/C/Users/mahmo/Desktop/Dentgram Docs/Static_Full_Version/draggable_panels.html",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/users/admins/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/users/dentists/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/users/suppliers/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/routes/api.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Api/Returns/ReturnsController.php",
+		"/C/Users/mahmo/Desktop/http---dentgram.com (live).postman_collection.json",
+		"/C/Users/mahmo/Desktop/dentgram/app/Models/StoreOrderReturn.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/lang/ar.json",
+		"/C/Users/mahmo/Desktop/dentgram/public/js/plugins/moments/moments.js",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/layouts/app.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/sales/returns/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/supplier/returns/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/sales/orders/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/contacts/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/messages/view.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/messages/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Messages/MessagesController.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Contacts/ContactsController.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/UserContact.php",
+		"/C/Users/mahmo/Desktop/Dentgram Docs/Static_Full_Version/contacts.html",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Admin/Advertising/BestOffers/BestOffersController.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/advertising/best_offers/create.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/advertising/best_offers/edit.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/advertising/best_offers/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Models/BestOffer.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/advertising/recommendeds/edit.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/advertising/recommendeds/create.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/advertising/recommendeds/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Models/Recommended.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Admin/Advertising/Recommendeds/RecommendedsController.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/advertising/sliders/edit.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/advertising/recommendeds/stores.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/advertising/recommendeds/items.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/supplier/items/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/products/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/libraries/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/advertising/sliders/create.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/events/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/advertising/sliders/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/courses/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Admin/Sliders/SlidersController.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Supplier/MatchMakeings/MatchMakeingsController.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/supplier/match_makeings/opportunity_view.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/supplier/match_makeings/opportunities.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/messages/move.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/messages/categories.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/messages/move_single.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Models/MessageType.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Models/MessageReply.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/sales/returns/manage.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/sales/orders/manage.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Admin/Sales/Returns/ReturnsController.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Admin/Sales/Orders/OrdersController.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Admin/Approvals/ManageMatch/ManageMatchController.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/approvals/manage_careers/edit.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/approvals/used_items/edit.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/approvals/manage_match/edit.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/approvals/manage_match/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Models/MatchMakeing.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/approvals/manage_careers/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/approvals/used_items/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Admin/Approvals/UsedItems/UsedItemsController.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Admin/Approvals/ManageCareers/ManageCareersController.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Admin/ManageCareers/ManageCareersController.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/manage_careers/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/manage_careers/edit.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Api/User/UserCareersController.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/supplier/match_makeings/create.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/supplier/careers/edit.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/supplier/careers/create.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/supplier/match_makeings/edit.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/used_items/edit.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/resources/views/admin/used_items/index.blade.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Admin/Careers/CareersController.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Admin/DentistCareers/CareersController.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Admin/UsedItems/UsedItemsController.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Models/Career.php",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Admin/Courses/CoursesController.php",
+		"/C/xampp/htdocs/index.php",
+		"/C/Users/mahmo/Desktop/http---dentgram.mds (live).postman_collection.json",
+		"/C/Users/mahmo/Desktop/dentgram/app/Http/Controllers/Api/User/ProfileController.php",
+		"/C/Users/mahmo/Desktop/http---dentgram.mds (local).postman_collection.json"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 169.0,
+		"where_history":
+		[
+			"C:\\Users\\mahmo\\Desktop\\dentgram_app\\project\\src",
+			"C:\\Users\\mahmo\\Desktop\\dentgram_app\\project\\src\\app",
+			"C:\\Users\\mahmo\\Desktop\\dentgram_app\\project",
+			"C:\\Users\\mahmo\\Desktop\\dentgram_app\\project\\src\\app",
+			"C:\\Users\\mahmo\\Desktop\\dentgram_app\\project",
+			"C:\\Users\\mahmo\\Desktop\\dentgram\\resources\\views",
+			"C:\\Users\\mahmo\\Desktop\\dentgram\\resources\\views\\admin\\approvals",
+			"C:\\Users\\mahmo\\Desktop\\dentgram\\resources\\views",
+			"C:\\Users\\mahmo\\Desktop\\dentgram\\app\\Http\\Controllers\\Api\\Structure",
+			"C:\\Users\\mahmo\\Desktop\\dentgram\\resources\\views",
+			"C:\\Users\\mahmo\\Desktop\\dentgram\\resources\\views\\supplier\\careers",
+			"C:\\Users\\mahmo\\Desktop\\dentgram\\public\\vendor\\laravel-filemanager",
+			"C:\\Users\\mahmo\\Desktop\\dentgram\\resources\\views\\admin\\events",
+			"C:\\Users\\mahmo\\Desktop\\dentgram\\public\\css",
+			"C:\\Users\\mahmo\\Desktop\\dentgram\\resources",
+			"C:\\Users\\MAHKn\\Desktop\\dentgram\\vendor\\unisharp\\laravel-filemanager",
+			"C:\\Users\\MAHKn\\Desktop\\dentgram\\resources\\views",
+			"C:\\Users\\MAHKn\\Desktop\\Dentgram",
+			"C:\\Users\\MAHKn\\Desktop\\ierek\\resources\\views",
+			"C:\\Users\\MAHKn\\Desktop\\ierek\\public\\front",
+			"-*.scss,C:\\Users\\MAHKn\\Desktop\\ierek\\public\\css\\assets",
+			"<open files>,<open folders>",
+			"C:\\Users\\MAHKn\\Desktop\\ierek",
+			"C:\\Users\\MAHKn\\Desktop\\ierek\\public\\assets",
+			"<open files>,<open folders>",
+			"C:\\Users\\MAHKn\\Desktop\\ierek\\app\\Http\\Controllers",
+			"C:\\Users\\MAHKn\\Desktop\\ierek\\public\\css",
+			"C:\\Users\\MAHKn\\Desktop\\ierek\\public\\fonts",
+			"C:\\Users\\MAHKn\\Desktop\\ierek\\resources\\assets\\css",
+			"C:\\Users\\MAHKn\\Desktop\\ierek\\public\\assets",
+			"C:\\Users\\MAHKn\\Desktop\\ierek\\resources\\views",
+			"views",
+			"<open files>,<open folders>",
+			"C:\\Users\\death\\Desktop\\ierek",
+			"C:\\Users\\death\\Desktop\\ierek\\app\\Http\\Controllers",
+			"C:\\Users\\death\\Desktop\\ierek\\config",
+			"C:\\Users\\death\\Desktop\\ierek\\app",
+			"C:\\Users\\death\\Desktop\\ierek\\config",
+			"C:\\Users\\death\\Desktop\\ierek",
+			"C:\\Users\\death\\Desktop\\ierek\\app\\Http\\Controllers",
+			"C:\\Users\\death\\Desktop\\ierek\\resources\\views",
+			"C:\\Users\\death\\Desktop\\ierek\\resources",
+			"<open files>,<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"INTERNET",
+			"present",
+			"alertCtrl",
+			".create",
+			"pro_image",
+			"loading",
+			"pro_image",
+			"thumb_list",
+			"image",
+			"[0]",
+			"plugin",
+			"browserInit",
+			"Ionic",
+			"lang_city",
+			"profileForm",
+			"AlertController",
+			"alertCtrl",
+			"mainFunc",
+			"createPass",
+			"form",
+			"create",
+			"boxlist",
+			"https://www.dentgram.com",
+			"https://dentgram.com",
+			"dentgram.com",
+			"www.dentgram.com",
+			"https://www.dentgram.com",
+			"\"ltr\"",
+			"ltr",
+			"add-card",
+			"-text-o",
+			"animated",
+			"logout",
+			"Log",
+			"data-name",
+			"preferences",
+			"hp-panel",
+			" data-orde",
+			"data-order",
+			"fadeInDown",
+			"hp-panel",
+			"col-sm-6",
+			"col-sm-12",
+			"'.home-page",
+			"filterSearch",
+			"menu",
+			"li data-active=\"",
+			" data-url=\"\"",
+			"a href=\"{{",
+			"href=\"{{",
+			"href=\"{{ route('",
+			"class=\"nav-a\"",
+			"href=\"/?/\"",
+			"href=\"?\"",
+			"class=\"nav-a",
+			"a href=\"{{ route('",
+			"local",
+			"www.ierek",
+			"https",
+			"mds",
+			"\"return\": [",
+			"moment",
+			"['']",
+			"sendMessage",
+			"compose",
+			"Send",
+			"send(",
+			"$('#search-results').html('<br><br><i class=\"fa fa-user-times fa-4x\"></i><h1>{{ __('No Search Results') }}</h1><br><br><button class=\"btn btn-success\" id=\"add-contact-empty-btn-2\" onclick=\"$(\\'#add-contact\\').removeClass(\\'hidden\\');$(this).addClass(\\'hidden\\');$(\\'#add-contact-btn\\').addClass(\\'hidden\\');$(\\'#add-contact-btn-2\\').addClass(\\'hidden\\');$(\\'input[name=email]\\').val($(\\'input[name=search-text]\\').val());$(\\'input[name=search-text]\\').val(\\'\\');\"><i class=\"fa fa-plus\"></i> {{  __('Add New Contact') }}</button><br>');",
+			"add-contact-btn-2",
+			"data[i].contact",
+			"filterSearch",
+			"col-lg-3",
+			"add-contact-status",
+			"recommended",
+			"$recommended",
+			"recommended",
+			"Recommended",
+			"Best Offer",
+			"Recommended",
+			"recommended",
+			"/recommended",
+			"recommended",
+			"recommendeds",
+			"Recommended",
+			"Slider",
+			"slider",
+			"countries:id,name_en,name_ar",
+			"isplay_",
+			"'countries:id,name_en,name_ar,items:id,name_en,name_ar,stores:id,name,icon'",
+			"#stores",
+			"#items",
+			"Store",
+			"store",
+			"$c-",
+			"country",
+			"countries",
+			"->withTrashed()",
+			",'id'",
+			"Slider",
+			"slider",
+			"'for'",
+			"category",
+			"display_",
+			"td class=\"hidden\"",
+			",'id'",
+			"categories",
+			"category",
+			"Category",
+			"categories",
+			"slider",
+			"Slider",
+			"sliders",
+			"admin/",
+			"sliders",
+			"Sliders",
+			"sliders",
+			"Sliders",
+			"BestOffer",
+			"caret",
+			"unread",
+			"unread m",
+			"addCate",
+			"if(singleArray",
+			"singleArray",
+			"markAs",
+			".category",
+			"var filter",
+			"editClass"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"http://dentgram.com",
+			"\"order\": [",
+			"admin/approvals/",
+			"{{ __('Store Agents') }}",
+			"{{ __('Store Settings') }}",
+			"{{ __('Agents') }}",
+			"{{ __('Layout') }}",
+			"{{ __('Information') }}",
+			"{{ __('Add New') }}",
+			"{{ __('Add New Books') }}",
+			"{{ __('Files') }}",
+			"{{ __('Books') }}",
+			"{{ __('Videos') }}",
+			"{{ __('Data') }}",
+			"{{ __('General') }}",
+			"{{ __('Links') }}",
+			"{{ __('Images') }}",
+			"{{ __('text-left') }}",
+			"@$slider_images = SliderImage::where('slider_id',$slider->id)->where('expire','>=',date('Y-m-d'))->orderBy('order','ASC')->get(['url','action']);\n\n            if(isset($slider_images) && count($slider_images) > 0){\n                foreach($slider_images as $im){\n                    if($im->action !== null)\n                    {\n                        $action_array = explode(':', $im->action);\n                        $action = [\n                            'target' => @$action_array[0],\n                            'id'     => @$action_array[1]\n                        ];\n\n                        $im['action'] = $action;\n                    }\n                }\n            }",
+			"career",
+			"'careers'",
+			"careers",
+			"",
+			"Career",
+			"career",
+			"careers",
+			"Careers",
+			"Career",
+			"Event",
+			"event",
+			"008bec",
+			"dentgram-filemanager?field_name",
+			"<i class=\"fa fa-picture-o\"></i> {{ __('Choose') }}",
+			"https://www.ierek.com",
+			"",
+			"https:",
+			"https://fonts",
+			"https:",
+			"Auth::user()->user_id",
+			"",
+			"'author_id',Auth::user()->user_id",
+			"'author_id', Auth::user()->user_id",
+			"'user_id', Auth::user()->user_id",
+			"$user_id = Auth::user()->user_id;",
+			"Auth::user()->user_id",
+			"Auth::user()->user_type_id",
+			"'user_id',Auth::user()->user_id",
+			"Auth::user()->first_name",
+			"Auth::check()"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 55.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.composer":
+	{
+		"height": 140.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 164.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 165.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "MK-Noty.sublime-project",
+	"replace":
+	{
+		"height": 65.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"texteditor/plugins/colors/ui/trumbowyg.colors.min.css",
+				"public\\texteditor\\plugins\\colors\\ui\\trumbowyg.colors.min.css"
+			],
+			[
+				"texteditor/trumbowyg.min.js",
+				"public\\texteditor\\trumbowyg.min.js"
+			],
+			[
+				"texteditor/langs/ar.min.js",
+				"public\\texteditor\\langs\\ar.min.js"
+			],
+			[
+				"texteditor/plugins/colors/trumbowyg.colors.min.js",
+				"public\\texteditor\\plugins\\colors\\trumbowyg.colors.min.js"
+			],
+			[
+				"js/plugins/icheck/icheck.min.js",
+				"public\\js\\plugins\\iCheck\\icheck.min.js"
+			],
+			[
+				"texteditor/ui/trumbowyg.min.css",
+				"public\\texteditor\\ui\\trumbowyg.min.css"
+			],
+			[
+				"front/font-awesome-4.3.0/css/font-awesome.css",
+				"public\\front\\font-awesome-4.3.0\\css\\font-awesome.css"
+			],
+			[
+				"revis",
+				"app\\Http\\Controllers\\RevisionController.php"
+			],
+			[
+				"fullpap",
+				"app\\Http\\Controllers\\FullPaperController.php"
+			],
+			[
+				"abstrac",
+				"app\\Http\\Controllers\\AbstractController.php"
+			],
+			[
+				"js/admin/pl",
+				"public\\js\\admin\\plugins.js"
+			],
+			[
+				"gmaps",
+				"public\\assets\\admin\\gmap.js"
+			],
+			[
+				"regularuserscontroller",
+				"app\\Http\\Controllers\\Admin\\RegularUsersController.php"
+			],
+			[
+				"/front/css/newstyle.css",
+				"public\\front\\css\\newstyle.css"
+			],
+			[
+				"front/bootstrap-sass-3.3.4/bootstrap-sass-3.3.4/assets/javascripts/bootstrap.js",
+				"public\\front\\bootstrap-sass-3.3.4\\bootstrap-sass-3.3.4\\assets\\javascripts\\bootstrap.js"
+			],
+			[
+				"front/css/custom.css",
+				"public\\front\\css\\custom.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\mahmo\\Desktop\\VPO Website\\VPO.sublime-project"
+			]
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 446.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 1170.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 340.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

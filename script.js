@@ -25,8 +25,8 @@ $("a[href^='#']").on('click', function(e) {
 $(window).bind('load', function() {
 
 	var mkConfig = {
-		positionY: 'bottom',
-		positionX: 'right',
+		positionX: 'bottom',
+		positionY: 'right',
 		max: 5,
 		scrollable: true
 	};
@@ -119,8 +119,8 @@ function copyCode(id,event) {
 }
 
 var oldConf = {
-		positionY: selVal('positionY'),
 		positionX: selVal('positionX'),
+		positionY: selVal('positionY'),
 		max: valOr('max',5),
 		rtl: truFal('rtl'),
 		scrollable: truFal('scrollable')
@@ -273,17 +273,17 @@ function updateCode() {
 
 	var configCount = 0, configStart = '<span id="generated-code">', configEnd = '', configInCall = '';
 
-	var positionY = '';
-	if(selVal('positionY') != 'right'){
-		positionY = '&ensp;&ensp;&ensp;&ensp;positionY:&ensp;"'+selVal('positionY')+'"';
+	var positionX = '';
+	if(selVal('positionX') != 'right'){
+		positionX = '&ensp;&ensp;&ensp;&ensp;positionX:&ensp;"'+selVal('positionX')+'"';
 		configCount++;
 	}
 
-	var positionX = '';
-	if(selVal('positionX') != 'bottom'){
+	var positionY = '';
+	if(selVal('positionY') != 'bottom'){
 		var addEnd = '';
 		if(configCount >= 1){ addEnd = ',<br>'; }
-		positionX = addEnd+'&ensp;&ensp;&ensp;&ensp;positionX:&ensp;"'+selVal('positionX')+'"';
+		positionY = addEnd+'&ensp;&ensp;&ensp;&ensp;positionY:&ensp;"'+selVal('positionY')+'"';
 		configCount++;
 	}
 
@@ -321,8 +321,8 @@ function updateCode() {
 
 	textConf = 
 	'<h3>Configration</h3>'+configStart+
-		positionY+
 		positionX+
+		positionY+
 		max+
 		rtl+
 		scrollable+
@@ -342,8 +342,8 @@ function showCode()
 function generate(){
 
 	var config = {
-		positionY: selVal('positionY'),
 		positionX: selVal('positionX'),
+		positionY: selVal('positionY'),
 		max: valOr('max',5),
 		rtl: truFal('rtl'),
 		scrollable: truFal('scrollable')

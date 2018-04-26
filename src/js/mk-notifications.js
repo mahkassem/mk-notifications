@@ -24,16 +24,16 @@ var uniqueId = 0;
 function mkNotifications(mkConfig){
 	if(mkConfig == undefined){
 		config = {
-			positionY: 'right',
-			positionX: 'bottom',
+			positionX: 'right',
+			positionY: 'bottom',
 			scrollable: true,
 			rtl: false,
 			max: 5
 		};
 	}else{
 		config = {
-			positionY: mkConfig.positionY != undefined ? mkConfig.positionY : 'right',
-			positionX: mkConfig.positionX != undefined ? mkConfig.positionX :  'bottom',
+			positionX: mkConfig.positionX != undefined ? mkConfig.positionX : 'right',
+			positionY: mkConfig.positionY != undefined ? mkConfig.positionY :  'bottom',
 			scrollable: mkConfig.scrollable != undefined ? mkConfig.scrollable : true,
 			rtl: mkConfig.rtl != undefined ? mkConfig.rtl : false,
 			max: mkConfig.max != undefined ? mkConfig.max :  5
@@ -43,7 +43,7 @@ function mkNotifications(mkConfig){
 	if(config.scrollable == true){ scrollable = ' mk-scrollable'; }else{ scrollable = ''; }
 	if(config.rtl == true){ rtl = ' mk-rtl'; }else{ rtl = ''; }
 
-	var mkNotifications = '<div id="mk-notifications" data-max="'+config.max+'" class="mk-notifications mk-'+config.positionX+' mk-'+config.positionY+scrollable+rtl+'"></div>',
+	var mkNotifications = '<div id="mk-notifications" data-max="'+config.max+'" class="mk-notifications mk-'+config.positionY+' mk-'+config.positionX+scrollable+rtl+'"></div>',
 		oldMkNotifications = document.getElementById('mk-notifications');
 	
 	if(oldMkNotifications != undefined){
