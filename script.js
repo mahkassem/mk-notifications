@@ -107,7 +107,7 @@ function copyCode(id,event) {
 
 	/* Alert the copied text */
 	mkNoti(
-		'Code Copied',
+		'Clipboard',
 		'Code was copied to your clipboard',
 		{
 			status:'success',
