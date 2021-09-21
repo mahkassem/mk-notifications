@@ -12,7 +12,7 @@
   "author": "Mahmoud Kassem",
   "license": "MIT",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@mahkassem:registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
