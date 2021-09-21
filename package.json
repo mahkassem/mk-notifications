@@ -1,6 +1,6 @@
 {
   "name": "@mahkassem/mk-notifications",
-  "version": "2.0.5",
+  "version": "2.1.3",
   "description": "Easy lightweight JavaScript notifications and toasts",
   "min": "dist",
   "bin": "dist",
@@ -15,8 +15,7 @@
     "@mahkassem:registry": "https://npm.pkg.github.com"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mahkassem/mk-notifications.git"
+    "url": "git://github.com:mahkassem/mk-notifications.git"
   },
   "bugs": {
     "url": "https://github.com/mahkassem/mk-notifications/issues"
