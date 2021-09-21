@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>MK Web Notifications</title>
+	<title>MK Web Notifications v2.0</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -15,7 +15,7 @@
 	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
 	  <a class="navbar-brand" href="#">
 	    <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
-	    MK Web Notifications
+	    MK Web Notifications v2.0
 	  </a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -31,9 +31,9 @@
 	      <li class="nav-item">
 	        <a class="nav-link" href="#examples">Examples</a>
 	      </li>
-	      <li class="nav-item">
+	      <!-- <li class="nav-item">
 	        <a class="nav-link" href="#documentation">Documentation</a>
-	      </li>
+	      </li> -->
 	      <li class="nav-item">
 	        <a class="nav-link" href="#about">About</a>
 	      </li>
@@ -48,10 +48,10 @@
 						<br><br>
 						<img src="logo.png">
 						<br>
-						<h1 class="display-4 c-darkgray">MK Web Notifications</h1><br>
-						<h3 class="c-gray">A easy to use nano jQuery plug-in for in browser notifications and toasts <small>{ size: 8.67 Kb }</small></h3><br>
+						<h1 class="display-4 c-darkgray">MK Web Notifications v2.0</h1><br>
+						<h3 class="c-gray">Easy to use CSS, JavaScript notifications, for in browser notifications and toasts<br><small>{ size: 5.25 Kb }</small></h3><br>
 						<a href="#usage" class="btn btn-primary btn-lg sm-margin"><i class="fa fa-code"></i>&nbsp;Getting Started</a>
-						<a href="#documentation" class="btn btn-info btn-lg sm-margin"><i class="fa fa-book"></i>&nbsp;Documentation</a>
+						<a href="#examples" class="btn btn-info btn-lg sm-margin"><i class="fab fa-readme"></i>&nbsp;Examples</a>
 					</div>
 					<div class="col-md-4">
 						<br><br><br>
@@ -73,7 +73,7 @@
 			<div class="col-md-8 offset-md-2">
 				<br>
 				<h3 class="c-darkgray"><i class="fa fa-flag-checkered"></i>&nbsp;Getting Started</h3>
-				<p>MK Notifications is a jQuery plug-in the can be used in any <a href="https://jquery.com/" target="_blank" rel="nofollow">jQuery</a> project to allow you to show cool notifications and toasts, it is free to use LICENSE and open soruce, simply follow the <a href="#usage">Getting Started</a> guide below to implement MK Notifications in your project.</p>
+				<p>MK Notifications is a JavaScript plug-in can be used in any JavaScript project to allow you to show cool notifications and toasts, it is free to use LICENSE and open soruce, simply follow the <a href="#usage">Getting Started</a> guide below to implement MK Notifications in your project.</p>
 				<p><a href="https://fontawesome.com/icons" target="_blank">Fontawesome</a> is required for the plugin pre setted statues, you can use other webfonts for custom icons, but not recommended.</p>
 				<a href="https://github.com/mahkassem/mk-web-notifications/archive/master.zip" class="btn btn-success btn-lg" target="_blank"><i class="fa fa-download"></i>&nbsp;Download <small>[&nbsp;<i class="fab fa-github"></i>&nbsp;GitHub&nbsp;]</small></a>
 				<br><br>
@@ -89,13 +89,12 @@
 				<div style="display: none" id="js-code">&lt;script href="src/js/mk-notifications.min.js"&gt;&lt;/script&gt;</div>
 
 				<h3 class="c-darkgray"><i class="fab fa-js"></i>&nbsp;JS</h3>
-				<p>MK Web Notifications uses <a href="https://jquery.com/" target="_blank" rel="nofollow">jQuery</a> JavaScript framework, make sure to include all jQuery scripts before plug-in script.</p>
-				<p>Place the following <code class="highlighter-rouge">&lt;script&gt;</code> near the end of your page, right before closing <code class="highlighter-rouge">&lt;/body&gt;</code> tag and after jQuery script, make sure the href matches your project.</p>
+				<p>Place the following <code class="highlighter-rouge">&lt;script&gt;</code> near the end of your page, right before closing <code class="highlighter-rouge">&lt;/body&gt;</code> tag, make sure the href matches your project.</p>
 				<pre class="html text-inline"><span class="a">&lt;script</span> <span class="b">href=</span><span class="c">"src/js/mk-notifications.min.js"</span><span class="a">&gt;</span><span class="a">&lt;/script&gt;</span><a data-toggle="tooltip" data-placement="left" title="Copy to clipboard" class="copy" href="javascript:void(0)" onclick="copyCode('#js-code',event)">Copy</a></pre>
 
 				<h3 class="c-darkgray"><i class="fab fa-html5"></i>&nbsp;HTML</h3>
-				<p>To initialize MK Web Notifications plug-in you should call <code class="highlighter-rouge">mkNotifications();</code> function in your DOM Ready function.
-					<pre class="html code-js">$(document).ready(function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="hashed">/* MK Web Notification init */</span><br>&nbsp;&nbsp;&nbsp;&nbsp;mkNotifications();<br>});</pre>For additional configurations please check the <a href="#documentation">Documentation</a> section.</p>
+				<p>To initialize MK Web Notifications plug-in you should call <code class="highlighter-rouge">mkNotifications();</code> function after your document "DOM" is loaded.
+					<pre class="html code-js">window.addEventListener('load', function() {<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="hashed">/* MK Web Notification init */</span><br>&nbsp;&nbsp;&nbsp;&nbsp;mkNotifications();<br>});</pre>For additional configurations please check the <a href="#documentation">Documentation</a> section.</p>
 
 				<h3 class="c-darkgray"><i class="fa fa-rocket"></i>&nbsp;Quick Start</h3>
 				<p>Call <code class="highlighter-rouge">mkNoti(title,message,{ <span class="hashed">/* Options */</span> });</code> function in DOM Ready function or in any DOM Ready function or element to show MK Web Notification in default style.
@@ -308,7 +307,7 @@
 			<div class="col-md-8 offset-md-2">
 				<br>
 				<h3 class="c-darkgray"><i class="fa fa-book"></i>&nbsp;Documentation</h3>
-				<h4 class="c-gray">Comming Soon</h4>
+				<p class="c-gray">Please use the code generator.</p>
 			</div>
 		</div>
 		<div class="row section about" id="about">
