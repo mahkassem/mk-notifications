@@ -23,7 +23,7 @@ https://mahkassem.github.io/mk-web-notifications/
   <code>&lt;link rel="stylesheet" href="src/css/mk-notifications.min.css"&gt;</code>
 
 <h3>JS</h3>
-<p>Place the following <script> near the end of your page, right before closing <code>&lt;</body>&gt;</code> tag, make sure the href matches your project.</p>
+<p>Place the following <script> near the end of your page, right before closing <code>&lt;/body&gt;</code> tag, make sure the href matches your project.</p>
 <code><script href="src/js/mk-notifications.min.js"></script></code>
 <br><br>
 <b>Created by:</b> Mahmoud Kassem<br>
