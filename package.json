@@ -1,6 +1,6 @@
 {
   "name": "@mahkassem/mk-notifications",
-  "version": "2.1.18",
+  "version": "2.1.2",
   "description": "Easy lightweight JavaScript notifications and toasts",
   "min": "dist",
   "directories.bin": "dist",
