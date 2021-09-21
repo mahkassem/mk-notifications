@@ -2,8 +2,8 @@
   "name": "mk-notifications.js",
   "version": "2.0.0",
   "description": "Easy lightweight JavaScript notifications and toasts",
-  "min": "src/js/mk-no/mk-notifications.min.js",
-  "bin": "src/js/mk-no/mk-notifications.min.js",
+  "min": "dist",
+  "bin": "dist",
   "keywords": [
     "mk-notifications",
     "javascript toasts",
