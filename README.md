@@ -1,5 +1,5 @@
 # MK Web Notifications
-A easy to use jQuery plug-in for in browser notifications and toasts
+Easy to use jQuery plug-in for in browser notifications and toasts
 
 # Version 1.5.3
 <b>Change-log:</b>
