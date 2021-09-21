@@ -11,6 +11,10 @@ Easy to use CSS, JavaScript notifications, for in browser notifications and toas
 
 # How to use
 
+## NPM
+
+<code>npm i mk-notifications.js</code>
+
 Awesome examples and documentation are availble at project official page:
 https://mahkassem.github.io/mk-web-notifications/
 
