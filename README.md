@@ -13,7 +13,7 @@ Easy to use CSS, JavaScript notifications, for in browser notifications and toas
 
 ## NPM
 
-<code>npm i mk-notifications</code>
+<code>npm i @mahkassem/mk-notifications</code>
 
 Awesome examples and documentation are availble at project official page:
 https://mahkassem.github.io/mk-notifications/
