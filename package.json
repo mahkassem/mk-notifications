@@ -1,5 +1,5 @@
 {
-  "name": "mk-notifications.js",
+  "name": "@mk/notifications",
   "version": "2.0.0",
   "description": "Easy lightweight JavaScript notifications and toasts",
   "min": "dist",
