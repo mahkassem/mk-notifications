@@ -1,0 +1,22 @@
+{
+  "name": "mk-notifications.js",
+  "version": "2.0.0",
+  "description": "Easy lightweight JavaScript notifications and toasts",
+  "min": "src/js/mk-no/mk-notifications.min.js",
+  "bin": "src/js/mk-no/mk-notifications.min.js",
+  "keywords": [
+    "mk-notifications",
+    "javascript toasts",
+    "jquery toasts plugin"
+  ],
+  "author": "Mahmoud Kassem",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahkassem/mk-web-notifications.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mahkassem/mk-web-notifications/issues"
+  },
+  "homepage": "https://mahkassem.github.io/mk-web-notifications/"
+}
