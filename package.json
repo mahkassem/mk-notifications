@@ -13,10 +13,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mahkassem/mk-web-notifications.git"
+    "url": "git+https://github.com/mahkassem/mk-notifications.git"
   },
   "bugs": {
-    "url": "https://github.com/mahkassem/mk-web-notifications/issues"
+    "url": "https://github.com/mahkassem/mk-notifications/issues"
   },
-  "homepage": "https://mahkassem.github.io/mk-web-notifications/"
+  "homepage": "https://mahkassem.github.io/mk-notifications/"
 }
