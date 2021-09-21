@@ -1,6 +1,6 @@
 {
   "name": "mk-notifications",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Easy lightweight JavaScript notifications and toasts",
   "min": "dist",
   "bin": "dist",
@@ -11,6 +11,9 @@
   ],
   "author": "Mahmoud Kassem",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mahkassem/mk-notifications.git"
