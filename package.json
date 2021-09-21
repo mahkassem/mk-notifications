@@ -16,11 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mahkassem/mk-notifications.git"
+    "url": "git+https://github.com/mahkassem/mk-notifications.git"
   },
   "bugs": {
     "url": "https://github.com/mahkassem/mk-notifications/issues",
     "email": "mahmoud.ali.kassem@gmail.com"
   },
-  "homepage": "https://mahkassem.github.io/mk-notifications/"
+  "homepage": "https://mahkassem.github.io/mk-notifications/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
