@@ -3,22 +3,24 @@
   "version": "2.1.17",
   "description": "Easy lightweight JavaScript notifications and toasts",
   "min": "dist",
-  "bin": "dist",
+  "directories.bin": "dist",
   "keywords": [
     "mk-notifications",
     "javascript toasts",
     "jquery toasts plugin"
   ],
-  "author": "Mahmoud Kassem",
+  "author": "Mahmoud Kassem <mahmoud.ali.kassem@gmail.com> (https://github.com/mahkassem)",
   "license": "MIT",
   "publishConfig": {
     "@mahkassem:registry": "https://npm.pkg.github.com"
   },
   "repository": {
-    "url": "git://github.com:mahkassem/mk-notifications.git"
+    "type": "git",
+    "url": "https://github.com/mahkassem/mk-notifications.git"
   },
   "bugs": {
-    "url": "https://github.com/mahkassem/mk-notifications/issues"
+    "url": "https://github.com/mahkassem/mk-notifications/issues",
+    "email": "mahmoud.ali.kassem@gmail.com"
   },
   "homepage": "https://mahkassem.github.io/mk-notifications/"
 }
