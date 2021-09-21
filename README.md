@@ -2,7 +2,7 @@
 
 Easy to use CSS, JavaScript notifications, for in browser notifications and toasts
 
-# Version 2.1.16
+# Version 2.1
 
 <b>Change-log:</b>
 
