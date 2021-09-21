@@ -1,4 +1,4 @@
-# MK Web Notifications
+# MK Notifications
 
 Easy to use CSS, JavaScript notifications, for in browser notifications and toasts
 
