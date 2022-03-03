@@ -1,29 +1,29 @@
 {
-  "name": "@mahkassem/mk-notifications",
-  "version": "2.1.2",
-  "description": "Easy lightweight JavaScript notifications and toasts",
-  "min": "dist",
-  "directories.bin": "dist",
-  "keywords": [
-    "mk-notifications",
-    "javascript toasts",
-    "jquery toasts plugin"
-  ],
-  "author": "Mahmoud Kassem <mahmoud.ali.kassem@gmail.com> (https://github.com/mahkassem)",
-  "license": "MIT",
-  "publishConfig": {
-    "@mahkassem:registry": "https://npm.pkg.github.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mahkassem/mk-notifications.git"
-  },
-  "bugs": {
-    "url": "https://github.com/mahkassem/mk-notifications/issues",
-    "email": "mahmoud.ali.kassem@gmail.com"
-  },
-  "homepage": "https://mahkassem.github.io/mk-notifications/",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+    "name": "@mahkassem/mk-notifications",
+    "version": "2.1.2",
+    "description": "Easy lightweight JavaScript notifications and toasts",
+    "min": "dist",
+    "directories.bin": "dist",
+    "keywords": [
+        "mk-notifications",
+        "javascript toasts",
+        "jquery toasts plugin"
+    ],
+    "author": "Mahmoud Kassem <mahmoud.ali.kassem@gmail.com> (https://github.com/mahkassem)",
+    "license": "MIT",
+    "publishConfig": {
+        "@mahkassem:registry": "https://npm.pkg.github.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mahkassem/mk-notifications.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mahkassem/mk-notifications/issues",
+        "email": "mahmoud.ali.kassem@gmail.com"
+    },
+    "homepage": "https://mahkassem.github.io/mk-notifications/",
+    "scripts": {
+        "test": "echo \"Error: no test specified\""
+    }
 }
